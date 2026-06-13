@@ -1,0 +1,24 @@
+﻿Address PropertiesAddress Properties	Sage 50 API
+The Address type exposes the following members.Properties
+NameDescription
+Address1
+Gets or sets line 1 of the address.
+Address2
+Gets or sets line 2 of the address.
+City
+Gets or sets the city of the address.
+Country
+Gets or sets the country of the address.
+IsModified
+Gets if this ValidatingComponent has been modified.
+(Inherited from ValidatingComponent.)
+IsUnchanged
+Gets if this ValidatingComponent has NOT been modified.
+(Inherited from ValidatingComponent.)
+SalesTaxCode
+Gets or sets the sales tax code for the address.
+State
+Gets or sets the state of the address.
+Zip
+Gets or sets the zip code of the address.
+TopSee Also ReferenceAddress ClassSage.Peachtree.API Namespace

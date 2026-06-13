@@ -1,0 +1,27 @@
+﻿AuthorizationResult EnumerationAuthorizationResult Enumeration	Sage 50 API
+The possible states that an suthorization request can have
+Namespace:
+Sage.Peachtree.API
+Assembly:
+Sage.Peachtree.API (in Sage.Peachtree.API.dll) Version: 2026.0.0.82 (2026.0.00.0082)Syntax  C#VBC++F# Copypublic enum AuthorizationResultPublic Enumeration AuthorizationResultpublic enum class AuthorizationResulttype AuthorizationResultMembers
+Member nameValueDescription
+None	0
+Represents no access attempted, an initialization value
+Pending	1
+The API application is waiting on approval from a Peachtree user
+Denied	2
+The API application has been denied access by a Peachtree user
+Granted	3
+The API application has been granted access by a Peachtree user
+CorruptedOrTampered	4
+The API application has been denied access due to detection of corruption/tampering with Peachtree's authorization records
+LoginRestricted	5
+Login permission was granted, but it is temporarily restricted (typically by a Peachtree administrator)
+CompanyLocked	6
+The company is locked in a single-user mode.  No logins are permitted.  This result does not indicate
+whether or not the login was authorized. The target Company must be available in shared mode before
+login authorization can be determined.
+NoCredentials	7
+Indicates that the API application requesting authorization has no credentials with the Company to authenticate against.
+The caller should use RequestAccess(CompanyIdentifier) to create credentials.
+See Also ReferenceSage.Peachtree.API Namespace

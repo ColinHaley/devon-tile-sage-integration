@@ -1,0 +1,14 @@
+﻿NameAndAddress PropertiesNameAndAddress Properties	Sage 50 API
+The NameAndAddress type exposes the following members.Properties
+NameDescription
+Address
+Gets or sets the Address
+IsModified
+Gets if this ValidatingComponent has been modified.
+(Inherited from ValidatingComponent.)
+IsUnchanged
+Gets if this ValidatingComponent has NOT been modified.
+(Inherited from ValidatingComponent.)
+Name
+Gets or sets the name
+TopSee Also ReferenceNameAndAddress ClassSage.Peachtree.API Namespace

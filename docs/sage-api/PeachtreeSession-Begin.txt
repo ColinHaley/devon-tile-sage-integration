@@ -1,0 +1,19 @@
+﻿PeachtreeSession.Begin Method PeachtreeSessionBegin Method 	Sage 50 API
+Called to start a PeachtreeSession.  This method should be paired with End when the
+use of the PeachtreeSession instance is completed.
+Namespace:
+Sage.Peachtree.API
+Assembly:
+Sage.Peachtree.API (in Sage.Peachtree.API.dll) Version: 2026.0.0.82 (2026.0.00.0082)Syntax  C#VBC++F# Copypublic void Begin(
+string applicationIdentifier
+)Public Sub Begin (
+applicationIdentifier As String
+)public:
+void Begin(
+String^ applicationIdentifier
+)member Begin :
+applicationIdentifier : string -> unit
+ParametersapplicationIdentifierType: SystemStringThe provided Application Identifier string that identifies the calling applicationExceptions ExceptionCondition
+SessionAlreadyOpenedException	Thrown when an PeachtreeSession has already been initialized
+ApplicationIdentifierExpiredException	Thrown when the provided token has expired
+See Also ReferencePeachtreeSession ClassSage.Peachtree.API Namespace

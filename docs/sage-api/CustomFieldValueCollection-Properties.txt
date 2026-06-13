@@ -1,0 +1,8 @@
+﻿CustomFieldValueCollection PropertiesCustomFieldValueCollection Properties	Sage 50 API
+The CustomFieldValueCollection type exposes the following members.Properties
+NameDescription
+Count	Gets the number of elements contained in the ReadOnlyCollectionT instance. (Inherited from ReadOnlyCollectionCustomFieldValue.)
+ItemInt32	Gets the element at the specified index. (Inherited from ReadOnlyCollectionCustomFieldValue.)
+ItemString
+Gets the label of the CustomField
+TopSee Also ReferenceCustomFieldValueCollection ClassSage.Peachtree.API Namespace

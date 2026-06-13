@@ -1,0 +1,8 @@
+﻿CustomFieldValue PropertiesCustomFieldValue Properties	Sage 50 API
+The CustomFieldValue type exposes the following members.Properties
+NameDescription
+Key
+Gets the key of the custom field.
+Value
+Gets or sets the value of the custom field
+TopSee Also ReferenceCustomFieldValue ClassSage.Peachtree.API Namespace

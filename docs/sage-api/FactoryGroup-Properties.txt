@@ -1,0 +1,134 @@
+﻿FactoryGroup PropertiesFactoryGroup Properties	Sage 50 API
+The CompanyFactoryGroup type exposes the following members.Properties
+NameDescription
+AccountFactory
+Gets the factory for Account
+ActivityItemFactory
+Gets the factory for ActivityItem
+AdvancePaymentFactory
+Gets the factory for AdvancePayment
+AdvancePaymentLineFactory
+Gets the factory for AdvancePaymentLine
+AdvanceReceiptFactory
+Gets the factory for AdvanceReceipt
+AdvanceReceiptLineFactory
+Gets the factory for AdvanceReceiptLine
+AssemblyItemFactory
+Gets the factory for AssemblyItem
+BudgetFactory
+Gets the factory for Budget
+ChargeItemFactory
+Gets the factory for ChargeItem
+ContactFactory
+Gets the factory for Contact
+CustomerCreditMemoFactory
+Gets the factory for CustomerCreditMemo
+CustomerCreditMemoInvoiceLineFactory
+Gets the factory for CustomerCreditMemoInvoiceLine
+CustomerCreditMemoRetainageLineFactory
+Gets the factory for CustomerCreditMemoRetainageLine
+CustomerCreditMemoSalesLineFactory
+Gets the factory for CustomerCreditMemoSalesLine
+CustomerFactory
+Gets the factory for Customer
+CustomerPaymentFactory
+Gets the factory for CustomerPayment
+CustomerPaymentLineFactory
+Gets the factory for CustomerPaymentLine
+DescriptionOnlyItemFactory
+Gets the factory for DescriptionOnlyItem
+EmployeeFactory
+Gets the factory for Employee
+GeneralJournalEntryFactory
+Gets the factory for GeneralJournalEntry
+GeneralJournalEntryLineFactory
+Gets the factory for GeneralJournalEntryLine
+InventoryItemFactory
+Gets the factory for InventoryItem
+JobFactory
+Gets the factory for Job
+LaborItemFactory
+Gets the factory for LaborItem
+MasterStockItemFactory
+Gets the factory for MasterStockItem
+NonStockItemFactory
+Gets the factory for NonStockItem
+PaymentExpenseLineFactory
+Gets the factory for PaymentExpenseLine
+PaymentFactory
+Gets the factory for Payment
+PaymentInvoiceLineFactory
+Gets the factory for PaymentInvoiceLine
+PaymentTermsFactory
+Gets the factory for PaymentTerms
+PricingService
+Gets the service instance for PricingService
+ProposalFactory
+Gets the factory for Proposal
+ProposalLineFactory
+Gets the factory for ProposalLine
+PurchaseInvoiceFactory
+Gets the factory for PurchaseInvoice
+PurchaseInvoiceOrderLineFactory
+Gets the factory for PurchaseInvoiceOrderLine
+PurchaseInvoicePurchasesLineFactory
+Gets the factory for PurchaseInvoicePurchasesLine
+PurchaseInvoiceRetainageLineFactory
+Gets the factory for PurchaseInvoiceRetainageLine
+PurchaseOrderFactory
+Gets the factory for PurchaseOrder
+PurchaseOrderLineFactory
+Gets the factory for PurchaseOrderLine
+QuoteFactory
+Gets the factory for Quote
+QuoteLineFactory
+Gets the factory for QuoteLine
+ReceiptFactory
+Gets the factory for Receipt
+ReceiptInvoiceLineFactory
+Gets the factory for ReceiptInvoiceLine
+ReceiptSalesLineFactory
+Gets the factory for ReceiptSalesLine
+SalesInvoiceFactory
+Gets the factory for SalesInvoice
+SalesInvoiceProposalLineFactory
+Gets the factory for SalesInvoiceProposalLine
+SalesInvoiceRetainageLineFactory
+Gets the factory for SalesInvoiceRetainageLine
+SalesInvoiceSalesLineFactory
+Gets the factory for SalesInvoiceSalesLine
+SalesInvoiceSalesOrderLineFactory
+Gets the factory for SalesInvoiceSalesOrderLine
+SalesOrderFactory
+Gets the factory for SalesOrder
+SalesOrderLineFactory
+Gets the factory for SalesOrderLine
+SalesTaxAgencyFactory
+Gets the factory for SalesTaxAgency
+SalesTaxCodeFactory
+Gets the factory for SalesTaxCode
+SerializedAssemblyItemFactory
+Gets the factory for SerializedAssemblyItem
+SerializedStockItemFactory
+Gets the factory for SerializedStockItem
+ServiceItemFactory
+Gets the factory for ServiceItem
+StockItemFactory
+Gets the factory for StockItem
+SubStockItemFactory
+Gets the factory for SubStockItem
+TransactionLineFactory
+Gets the factory for TransactionLine
+VendorCreditMemoFactory
+Gets the factory for VendorCreditMemo
+VendorCreditMemoInvoiceLineFactory
+Gets the factory for VendorCreditMemoInvoiceLine
+VendorCreditMemoPurchasesLineFactory
+Gets the factory for VendorCreditMemoPurchasesLine
+VendorFactory
+Gets the factory for Vendor
+VendorReceiptFactory
+Gets the factory for VendorReceipt
+VendorReceiptLineFactory
+Gets the factory for VendorReceiptLine
+TopSee Also ReferenceCompanyFactoryGroup ClassSage.Peachtree.API Namespace

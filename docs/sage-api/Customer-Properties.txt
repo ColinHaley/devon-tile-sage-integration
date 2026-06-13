@@ -1,0 +1,101 @@
+﻿Customer PropertiesCustomer Properties	Sage 50 API
+The Customer type exposes the following members.Properties
+NameDescription
+AccountNumber
+Gets or sets AccountNumber
+AverageDaysToPayInvoices
+Gets AverageDaysToPayInvoices
+This property cannot be used for filtering or sorting
+Balance
+Gets Balance
+BillToContact
+Gets the Contact to which the customer is billed
+CashAccountReference
+Gets or sets the cash Account for the customer.
+This property cannot be used for filtering or sorting
+Category
+Gets or sets Category
+Contacts
+Gets Contacts
+CreditStatus
+Gets or sets CreditStatus
+CustomerSince
+Gets or sets CustomerSince
+CustomFieldValues
+Gets the custom field values for the customer
+Email
+Gets or sets Email
+ID
+Gets or sets ID
+IsAdded
+Gets if this Entity is new.
+(Inherited from Entity.)
+IsDeleteAllowed
+Indicates whether this entity allowed to be deleted.
+IsDeleted
+Gets if this Entity has been marked for deletion.
+(Inherited from Entity.)
+IsInactive
+Gets or sets IsInactive
+IsModified
+Gets if this ValidatingComponent has been modified.
+(Inherited from ValidatingComponent.)
+IsProspect
+Gets or sets IsProspect
+IsSaveAllowed
+Indicates whether this entity allowed to be saved.
+IsUnchanged
+Gets if this ValidatingComponent has NOT been modified.
+(Inherited from ValidatingComponent.)
+Key
+Gets the EntityReference to this Customer instance
+LastInvoiceAmount
+Gets LastInvoiceAmount
+LastInvoiceDate
+Gets LastInvoiceDate
+LastPaymentAmount
+Gets LastPaymentAmount
+LastPaymentDate
+Gets LastPaymentDate
+LastSavedAt
+Gets LastSavedAt
+LastStatementDate
+Gets LastStatementDate
+Name
+Gets or sets Name
+OpenPurchaseOrderNumber
+Gets or sets OpenPurchaseOrderNumber
+PaymentMethod
+Gets or sets PaymentMethod
+This property cannot be used for filtering or sorting
+PhoneNumbers
+Gets the list of Phone Numbers for the Customer
+PriceLevel
+Gets or sets PriceLevel
+ReplaceInventoryItemIDWithPartNumber
+Gets or sets ReplaceInventoryItemIDWithPartNumber
+This property cannot be used for filtering or sorting
+ReplaceInventoryItemIDWithUPC
+Gets or sets ReplaceInventoryItemIDWithUPC
+This property cannot be used for filtering or sorting
+ResaleNumber
+Gets or sets ResaleNumber
+Revision
+Gets the Revision for the entity
+(Inherited from Entity.)
+SalesRepresentativeReference
+Gets or sets the Employee sales representative for the customer.
+ShipToContact
+Gets or Sets the contact to whom items are shipped
+ShipVia
+Gets or sets ShipVia
+Terms
+Gets or sets Terms
+UseEmailToDeliverForms
+Gets or sets UseEmailToDeliverForms
+This property cannot be used for filtering or sorting
+UsualSalesAccountReference
+Gets or sets the usual sales Account for the customer.
+WebSiteURL
+Gets or sets WebSiteURL
+TopSee Also ReferenceCustomer ClassSage.Peachtree.API Namespace

@@ -1,0 +1,48 @@
+﻿ReceiptInvoiceLine PropertiesReceiptInvoiceLine Properties	Sage 50 API
+The ReceiptInvoiceLine type exposes the following members.Properties
+NameDescription
+AccountReference
+Gets or sets the general ledger Account number to use when recording this line of the transaction.
+(Inherited from TransactionLine.)
+Amount
+The calculated amount obtained by multiplying the quantity by the unit price.
+(Inherited from TransactionLine.)
+AmountPaid
+Gets or sets AmountPaid
+This property cannot be used for filtering or sorting
+Description
+A description of the line
+(Inherited from TransactionLine.)
+DiscountAccountReference
+Returns the discount Account for the receipt invoice line.
+This property cannot be used for filtering or sorting
+DiscountAmount
+Gets or sets DiscountAmount
+This property cannot be used for filtering or sorting
+InvoiceReference
+Gets a reference to the SalesInvoice or CustomerCreditMemo this line is paying
+IsAdded
+Gets if this Entity is new.
+(Inherited from Entity.)
+IsDeleted
+Gets if this Entity has been marked for deletion.
+(Inherited from Entity.)
+IsModified
+Gets if this ValidatingComponent has been modified.
+(Inherited from ValidatingComponent.)
+IsUnchanged
+Gets if this ValidatingComponent has NOT been modified.
+(Inherited from ValidatingComponent.)
+IsUsed
+Indicates whether this line is used or not
+(Inherited from TransactionLine.)
+JobReference
+Gets or sets the Job related to the transaction.
+Key
+Gets the EntityReference to this ReceiptInvoiceLine instance
+ParentTransactionReference
+Gets the EntityReference of the parent Receipt transaction.
+Revision
+Gets the Revision for the entity
+(Inherited from Entity.)
+TopSee Also ReferenceReceiptInvoiceLine ClassSage.Peachtree.API Namespace

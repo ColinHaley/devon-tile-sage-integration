@@ -1,0 +1,158 @@
+﻿SalesInvoice ClassSalesInvoice Class	Sage 50 API
+SalesInvoice class allows access to Sales Invoice transactions the Company.
+Inheritance Hierarchy SystemObject  Sage.Peachtree.APIValidatingComponent    Sage.Peachtree.APIEntity      Sage.Peachtree.APITransaction        Sage.Peachtree.APISalesInvoice
+Namespace:
+Sage.Peachtree.API
+Assembly:
+Sage.Peachtree.API (in Sage.Peachtree.API.dll) Version: 2026.0.0.82 (2026.0.00.0082)Syntax  C#VBC++F# Copypublic sealed class SalesInvoice : Transaction,
+ISaveableEntity2, ISaveableEntity, IDeletableEntity2, IDeletableEntityPublic NotInheritable Class SalesInvoice
+Inherits Transaction
+Implements ISaveableEntity2, ISaveableEntity, IDeletableEntity2, IDeletableEntitypublic ref class SalesInvoice sealed : public Transaction,
+ISaveableEntity2, ISaveableEntity, IDeletableEntity2, IDeletableEntity[<SealedAttribute>]
+type SalesInvoice =
+class
+inherit Transaction
+interface ISaveableEntity2
+interface ISaveableEntity
+interface IDeletableEntity2
+interface IDeletableEntity
+endThe SalesInvoice type exposes the following members.Properties
+NameDescription
+AccountReference
+Gets or sets the general ledger Account to use when recording money related to this transaction.
+(Inherited from Transaction.)
+Amount
+The sum of amounts for each line listed on the transaction
+(Inherited from Transaction.)
+AmountDue
+Gets AmountDue
+ApplyToProposalLines
+Returns the proposal details of the sales invoice as a collection of SalesInvoiceProposalLines.
+ApplyToSalesLines
+Returns the sales details of the sales invoice as a collection of SalesInvoiceSalesLines.
+ApplyToSalesOrderLines
+Returns the sales order details of the sales invoice as a collection of SalesInvoiceSalesOrderLines.
+CustomerNote
+Gets or sets CustomerNote
+CustomerPurchaseOrderNumber
+Gets or sets CustomerPurchaseOrderNumber
+CustomerReference
+Gets or sets the Customer for the sales invoice.
+Date
+The date of the transaction
+(Inherited from Transaction.)
+DateDue
+Gets or sets DateDue
+DiscountAmount
+Gets or sets DiscountAmount
+DiscountDate
+Gets or sets DiscountDate
+DropShip
+Gets or sets DropShip
+FreightAccountReference
+The account associated with the freight charges for this transaction
+FreightAmount
+The freight charges for this transaction.
+This property cannot be used for filtering or sorting
+InternalNote
+Gets or sets InternalNote
+IsAdded
+Gets if this Entity is new.
+(Inherited from Entity.)
+IsDeleteAllowed
+Indicates whether this entity allowed to be deleted.
+IsDeleted
+Gets if this Entity has been marked for deletion.
+(Inherited from Entity.)
+IsModified
+Gets if this ValidatingComponent has been modified.
+(Inherited from ValidatingComponent.)
+IsPosted
+Gets IsPosted
+This property cannot be used for filtering or sorting
+(Inherited from Transaction.)
+IsSaveAllowed
+Indicates whether this entity allowed to be saved.
+IsUnchanged
+Gets if this ValidatingComponent has NOT been modified.
+(Inherited from ValidatingComponent.)
+Key
+Gets the EntityReference to this SalesInvoice instance
+LastSavedAt
+Gets the time the transaction was last saved at.
+(Inherited from Transaction.)
+PrintCustomerNoteAfterLineItems
+Gets or sets PrintCustomerNoteAfterLineItems
+ReferenceNumber
+Gets or sets ReferenceNumber
+(Inherited from Transaction.)
+Revision
+Gets the Revision for the entity
+(Inherited from Entity.)
+SalesRepresentativeReference
+Gets or sets the Employee sales representative responsible for the sales invoice.
+SalesTaxAmount
+The total sales tax calculated for the transaction.
+This property cannot be used for filtering or sorting
+SalesTaxCodeReference
+Gets or sets the SalesTaxCode for the sales invoice.
+ShipDate
+Gets or sets ShipDate
+ShipToAddress
+Get the shipping address
+ShipVia
+Gets or sets ShipVia
+StatementNote
+Gets or sets StatementNote
+TermsDescription
+Gets or sets TermsDescription
+WithholdRetainageLines
+Returns the retainage details of the sales invoice as a collection of SalesInvoiceRetainageLines.
+TopMethods
+NameDescription
+AddSalesLine
+Adds a sales line to the Sales Invoice
+AddSalesOrderLine
+Adds a line referencing the given Sales Order Line to the Sales Invoice
+AgeOnDate
+Returns the number of days passed the due date
+Delete
+Deletes the SalesInvoice
+Equals	Determines whether the specified object is equal to the current object. (Inherited from Object.)
+GetHashCode	Serves as the default hash function. (Inherited from Object.)
+GetType	Gets the Type of the current instance. (Inherited from Object.)
+MarkForDeletion
+Marks this Entity to be deleted.
+Entity instances that have been marked as deleted are prohibited from using Save(), and must use Delete()
+(Inherited from Entity.)
+RemoveSalesLine
+Remove an existing sales line from the Sales Invoice
+RemoveSalesOrderLine
+Remove an existing Sales Order line from the Sales Invoice
+Save
+Saves the SalesInvoice
+ToString	Returns a string that represents the current object. (Inherited from Object.)
+Validate
+Validate this ValidatingComponent.
+(Inherited from ValidatingComponent.)
+Validate(ValidationProblemList)
+Validate this ValidatingComponent.
+(Inherited from ValidatingComponent.)
+Void
+Void the sales invoice
+TopEvents
+NameDescription
+Deleted
+Raises the Deleted event after this instance is deleted
+MarkedForDeletion
+Event which is raised after this Entity is deleted.
+(Inherited from Entity.)
+PropertyChanged
+Event fired when a property on the bus obj changes.
+(Inherited from ValidatingComponent.)
+Saved
+Raises the Saved event after this instance is persisted
+ValidationComplete
+Event fired when validation of entity has completed.
+(Inherited from ValidatingComponent.)
+TopSee Also ReferenceSage.Peachtree.API NamespaceSage.Peachtree.APISalesInvoiceSalesLineSage.Peachtree.APISalesInvoiceSalesOrderLineSage.Peachtree.APISalesInvoiceProposalLineSage.Peachtree.APISalesInvoiceRetainageLineSage.Peachtree.APISalesInvoiceListSage.Peachtree.API.FactoriesSalesInvoiceFactory

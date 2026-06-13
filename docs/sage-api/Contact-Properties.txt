@@ -1,0 +1,53 @@
+﻿Contact PropertiesContact Properties	Sage 50 API
+The Contact type exposes the following members.Properties
+NameDescription
+Address
+Gets the address for the contact
+CompanyName
+Gets or sets the company name of the contact.
+Email
+Gets or sets the email of the contact.
+FirstName
+Gets or sets the contact's first name.
+Gender
+Gets or sets the contact's gender.
+IsAdded
+Gets if this Entity is new.
+(Inherited from Entity.)
+IsDeleted
+Gets if this Entity has been marked for deletion.
+(Inherited from Entity.)
+IsModified
+Gets if this ValidatingComponent has been modified.
+(Inherited from ValidatingComponent.)
+IsPrimaryContact
+Returns whether the contact is a primary contact.
+IsUnchanged
+Gets if this ValidatingComponent has NOT been modified.
+(Inherited from ValidatingComponent.)
+Key
+Gets the EntityReference to this Contact instance
+LastName
+Gets or sets the contact's last name.
+LastSavedAt
+Gets LastSavedAt
+MiddleInitial
+Gets or sets the contact's middle initial.
+Name
+Gets the contact's name.
+NameToUseOnForms
+Gets or sets the contact's name to use on forms.
+Notes
+Gets or sets the notes for the contact.
+PhoneNumbers
+Gets the list of Phone Numbers for the contact
+Prefix
+Gets or sets the contact's prefix.
+Revision
+Gets the Revision for the entity
+(Inherited from Entity.)
+Suffix
+Gets or sets the contact's suffix.
+Title
+Gets or sets the contact's title.
+TopSee Also ReferenceContact ClassSage.Peachtree.API Namespace

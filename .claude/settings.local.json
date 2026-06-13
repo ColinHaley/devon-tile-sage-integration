@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(\\(Get-ChildItem C:\\\\temp\\\\sageapi\\\\html | Measure-Object\\).Count; Get-ChildItem C:\\\\temp\\\\sageapi\\\\html | Select-Object Name -First 40)"
+    ]
+  }
+}

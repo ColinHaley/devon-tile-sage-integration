@@ -1,0 +1,8 @@
+﻿Receipt.AddSalesLine Method ReceiptAddSalesLine Method 	Sage 50 API
+Adds a sales line to the Receipt
+Namespace:
+Sage.Peachtree.API
+Assembly:
+Sage.Peachtree.API (in Sage.Peachtree.API.dll) Version: 2026.0.0.82 (2026.0.00.0082)Syntax  C#VBC++F# Copypublic ReceiptSalesLine AddSalesLine()Public Function AddSalesLine As ReceiptSalesLinepublic:
+ReceiptSalesLine^ AddSalesLine()member AddSalesLine : unit -> ReceiptSalesLine
+Return ValueType: ReceiptSalesLineThe ReceiptSalesLine that was added.See Also ReferenceReceipt ClassSage.Peachtree.API Namespace

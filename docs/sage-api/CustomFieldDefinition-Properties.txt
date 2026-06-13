@@ -1,0 +1,8 @@
+﻿CustomFieldDefinition PropertiesCustomFieldDefinition Properties	Sage 50 API
+The CustomFieldDefinition type exposes the following members.Properties
+NameDescription
+Enabled
+Indicates if the custom field with the given name is enabled
+Label
+Provides the name of the Custom Field
+TopSee Also ReferenceCustomFieldDefinition ClassSage.Peachtree.API Namespace

@@ -1,0 +1,15 @@
+﻿SalesInvoiceFactory MethodsSalesInvoiceFactory Methods	Sage 50 API
+The SalesInvoiceFactory type exposes the following members.Methods
+NameDescription
+Create
+Creates a new instance of SalesInvoice with specific default settings
+Equals	Determines whether the specified object is equal to the current object. (Inherited from Object.)
+GetHashCode	Serves as the default hash function. (Inherited from Object.)
+GetType	Gets the Type of the current instance. (Inherited from Object.)
+List
+Returns a list of SalesInvoices
+Load
+Retrieves the specified entity from the company database.
+(Overrides EntityFactoryBaseENTITY_TYPELoad(EntityReferenceENTITY_TYPE).)
+ToString	Returns a string that represents the current object. (Inherited from Object.)
+TopSee Also ReferenceSalesInvoiceFactory ClassSage.Peachtree.API.Factories Namespace

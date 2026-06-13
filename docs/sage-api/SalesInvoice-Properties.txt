@@ -1,0 +1,94 @@
+﻿SalesInvoice PropertiesSalesInvoice Properties	Sage 50 API
+The SalesInvoice type exposes the following members.Properties
+NameDescription
+AccountReference
+Gets or sets the general ledger Account to use when recording money related to this transaction.
+(Inherited from Transaction.)
+Amount
+The sum of amounts for each line listed on the transaction
+(Inherited from Transaction.)
+AmountDue
+Gets AmountDue
+ApplyToProposalLines
+Returns the proposal details of the sales invoice as a collection of SalesInvoiceProposalLines.
+ApplyToSalesLines
+Returns the sales details of the sales invoice as a collection of SalesInvoiceSalesLines.
+ApplyToSalesOrderLines
+Returns the sales order details of the sales invoice as a collection of SalesInvoiceSalesOrderLines.
+CustomerNote
+Gets or sets CustomerNote
+CustomerPurchaseOrderNumber
+Gets or sets CustomerPurchaseOrderNumber
+CustomerReference
+Gets or sets the Customer for the sales invoice.
+Date
+The date of the transaction
+(Inherited from Transaction.)
+DateDue
+Gets or sets DateDue
+DiscountAmount
+Gets or sets DiscountAmount
+DiscountDate
+Gets or sets DiscountDate
+DropShip
+Gets or sets DropShip
+FreightAccountReference
+The account associated with the freight charges for this transaction
+FreightAmount
+The freight charges for this transaction.
+This property cannot be used for filtering or sorting
+InternalNote
+Gets or sets InternalNote
+IsAdded
+Gets if this Entity is new.
+(Inherited from Entity.)
+IsDeleteAllowed
+Indicates whether this entity allowed to be deleted.
+IsDeleted
+Gets if this Entity has been marked for deletion.
+(Inherited from Entity.)
+IsModified
+Gets if this ValidatingComponent has been modified.
+(Inherited from ValidatingComponent.)
+IsPosted
+Gets IsPosted
+This property cannot be used for filtering or sorting
+(Inherited from Transaction.)
+IsSaveAllowed
+Indicates whether this entity allowed to be saved.
+IsUnchanged
+Gets if this ValidatingComponent has NOT been modified.
+(Inherited from ValidatingComponent.)
+Key
+Gets the EntityReference to this SalesInvoice instance
+LastSavedAt
+Gets the time the transaction was last saved at.
+(Inherited from Transaction.)
+PrintCustomerNoteAfterLineItems
+Gets or sets PrintCustomerNoteAfterLineItems
+ReferenceNumber
+Gets or sets ReferenceNumber
+(Inherited from Transaction.)
+Revision
+Gets the Revision for the entity
+(Inherited from Entity.)
+SalesRepresentativeReference
+Gets or sets the Employee sales representative responsible for the sales invoice.
+SalesTaxAmount
+The total sales tax calculated for the transaction.
+This property cannot be used for filtering or sorting
+SalesTaxCodeReference
+Gets or sets the SalesTaxCode for the sales invoice.
+ShipDate
+Gets or sets ShipDate
+ShipToAddress
+Get the shipping address
+ShipVia
+Gets or sets ShipVia
+StatementNote
+Gets or sets StatementNote
+TermsDescription
+Gets or sets TermsDescription
+WithholdRetainageLines
+Returns the retainage details of the sales invoice as a collection of SalesInvoiceRetainageLines.
+TopSee Also ReferenceSalesInvoice ClassSage.Peachtree.API Namespace

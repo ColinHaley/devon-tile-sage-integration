@@ -1,0 +1,89 @@
+﻿SalesInvoiceList MethodsSalesInvoiceList Methods	Sage 50 API
+The SalesInvoiceList type exposes the following members.Methods
+NameDescription
+Add
+Adds the item to the collection
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+BeginInit
+Begins suppression of list changed notification events
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+BinarySearch(ENTITY_TYPE)
+Performs a binary search upon the sorted collection for the specified value using the default comparer
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+BinarySearch(ENTITY_TYPE, IComparerENTITY_TYPE)
+Performs a binary search upon the sorted collection for the specified value using the specified comparer
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+BinarySearch(Int32, Int32, ENTITY_TYPE, IComparerENTITY_TYPE)
+Performs a binary search upon the sorted collection within the specified range, using the specified comparer
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+Clear
+Clears the collection
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+Contains
+Identifies if the collection contains the specified item
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+ContainsKey
+Indicates if an item with the given key is present in the collection
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+CopyTo
+Provides a means to copy the collection to a target array
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+EndInit
+Ends suppression of list changed notification events
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+Equals	Determines whether the specified object is equal to the current object. (Inherited from Object.)
+GetEnumerator
+Allows the collection to be enumerated
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+GetHashCode	Serves as the default hash function. (Inherited from Object.)
+GetItemByKey
+Retrieves the related item for the given key
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+GetType	Gets the Type of the current instance. (Inherited from Object.)
+IndexOf
+Provides the collection index of the specified item
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+IndexOfKey
+Provides the collection index of the item with the given key
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+Insert
+Inserts an item at the specified index
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+Load
+Causes the collection to load data using the datasource
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+Load(LoadModifiers)
+Causes the collection to load data using the datasource with the specified LoadModifiers.
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+Remove
+Removes the specified item from the collection
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+RemoveAt
+Removes the item located at the specified index
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+RemoveByKey
+Removes the item with the given key from the collection
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+Save
+Causes the collection to save data using the datasink
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+SetItem
+Sets the item in the collection, with the item supplied key
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+Sort(IComparerENTITY_TYPE)
+Sorts the collection using the specified comparer
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+Sort(Int32, Int32, IComparerENTITY_TYPE)
+Sorts the collection in the specified range by the specified comparer
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+ToString	Returns a string that represents the current object. (Inherited from Object.)
+TryGetValue
+Retrieves the item from the collection if present
+(Inherited from PersistentListENTITY_KEY_TYPE, ENTITY_TYPE.)
+Validate
+Validate the items in this list.
+(Inherited from EntityListENTITY_TYPE.)
+Validate(ValidationProblemList)
+Executes the validation method of each loaded item in the list.
+(Inherited from EntityListENTITY_TYPE.)
+TopSee Also ReferenceSalesInvoiceList ClassSage.Peachtree.API Namespace

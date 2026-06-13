@@ -1,0 +1,70 @@
+﻿Receipt PropertiesReceipt Properties	Sage 50 API
+The Receipt type exposes the following members.Properties
+NameDescription
+AccountReference
+Gets or sets the general ledger Account to use when recording money related to this transaction.
+(Inherited from Transaction.)
+Amount
+The sum of amounts for each line listed on the transaction
+(Inherited from Transaction.)
+ApplyToInvoiceLines
+Returns the invoice details of the receipt as a collection of ReceiptInvoiceLines.
+ApplyToSalesLines
+Returns the sales details of the receipt as a collection of ReceiptSalesLines.
+CreditCardAuthorizationInfo
+Get the credit card authorization information for this Receipt
+CustomerReference
+Gets or sets the Customer for the receipt.
+Date
+The date of the transaction
+(Inherited from Transaction.)
+DepositTicketID
+Gets or sets DepositTicketID
+DiscountAccountReference
+Gets or sets the discount Account for the receipt.
+This property cannot be used for filtering or sorting
+IsAdded
+Gets if this Entity is new.
+(Inherited from Entity.)
+IsDeleteAllowed
+Indicates whether this entity allowed to be deleted.
+IsDeleted
+Gets if this Entity has been marked for deletion.
+(Inherited from Entity.)
+IsModified
+Gets if this ValidatingComponent has been modified.
+(Inherited from ValidatingComponent.)
+IsPosted
+Gets IsPosted
+This property cannot be used for filtering or sorting
+(Inherited from Transaction.)
+IsSaveAllowed
+Indicates whether this entity allowed to be saved.
+IsUnchanged
+Gets if this ValidatingComponent has NOT been modified.
+(Inherited from ValidatingComponent.)
+Key
+Gets the EntityReference to this Receipt instance
+LastSavedAt
+Gets the time the transaction was last saved at.
+(Inherited from Transaction.)
+MainAddress
+Get the billing NameAndAddress for the receipt.
+PaymentMethod
+Gets or sets PaymentMethod
+ReceiptNumber
+Gets or sets ReceiptNumber
+ReferenceNumber
+Gets or sets ReferenceNumber
+(Inherited from Transaction.)
+Revision
+Gets the Revision for the entity
+(Inherited from Entity.)
+SalesRepresentativeReference
+Gets or sets the Employee sales representative responsible for the receipt.
+SalesTaxAmount
+Gets SalesTaxAmount
+This property cannot be used for filtering or sorting
+SalesTaxCodeReference
+Gets or sets the SalesTaxCode for the receipt.
+TopSee Also ReferenceReceipt ClassSage.Peachtree.API Namespace

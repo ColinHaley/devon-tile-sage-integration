@@ -1,0 +1,132 @@
+﻿Receipt ClassReceipt Class	Sage 50 API
+Receipt provides access to Receipt transactions in the Company.
+Inheritance Hierarchy SystemObject  Sage.Peachtree.APIValidatingComponent    Sage.Peachtree.APIEntity      Sage.Peachtree.APITransaction        Sage.Peachtree.APIReceipt
+Namespace:
+Sage.Peachtree.API
+Assembly:
+Sage.Peachtree.API (in Sage.Peachtree.API.dll) Version: 2026.0.0.82 (2026.0.00.0082)Syntax  C#VBC++F# Copypublic sealed class Receipt : Transaction,
+ISaveableEntity2, ISaveableEntity, IDeletableEntity2, IDeletableEntityPublic NotInheritable Class Receipt
+Inherits Transaction
+Implements ISaveableEntity2, ISaveableEntity, IDeletableEntity2, IDeletableEntitypublic ref class Receipt sealed : public Transaction,
+ISaveableEntity2, ISaveableEntity, IDeletableEntity2, IDeletableEntity[<SealedAttribute>]
+type Receipt =
+class
+inherit Transaction
+interface ISaveableEntity2
+interface ISaveableEntity
+interface IDeletableEntity2
+interface IDeletableEntity
+endThe Receipt type exposes the following members.Properties
+NameDescription
+AccountReference
+Gets or sets the general ledger Account to use when recording money related to this transaction.
+(Inherited from Transaction.)
+Amount
+The sum of amounts for each line listed on the transaction
+(Inherited from Transaction.)
+ApplyToInvoiceLines
+Returns the invoice details of the receipt as a collection of ReceiptInvoiceLines.
+ApplyToSalesLines
+Returns the sales details of the receipt as a collection of ReceiptSalesLines.
+CreditCardAuthorizationInfo
+Get the credit card authorization information for this Receipt
+CustomerReference
+Gets or sets the Customer for the receipt.
+Date
+The date of the transaction
+(Inherited from Transaction.)
+DepositTicketID
+Gets or sets DepositTicketID
+DiscountAccountReference
+Gets or sets the discount Account for the receipt.
+This property cannot be used for filtering or sorting
+IsAdded
+Gets if this Entity is new.
+(Inherited from Entity.)
+IsDeleteAllowed
+Indicates whether this entity allowed to be deleted.
+IsDeleted
+Gets if this Entity has been marked for deletion.
+(Inherited from Entity.)
+IsModified
+Gets if this ValidatingComponent has been modified.
+(Inherited from ValidatingComponent.)
+IsPosted
+Gets IsPosted
+This property cannot be used for filtering or sorting
+(Inherited from Transaction.)
+IsSaveAllowed
+Indicates whether this entity allowed to be saved.
+IsUnchanged
+Gets if this ValidatingComponent has NOT been modified.
+(Inherited from ValidatingComponent.)
+Key
+Gets the EntityReference to this Receipt instance
+LastSavedAt
+Gets the time the transaction was last saved at.
+(Inherited from Transaction.)
+MainAddress
+Get the billing NameAndAddress for the receipt.
+PaymentMethod
+Gets or sets PaymentMethod
+ReceiptNumber
+Gets or sets ReceiptNumber
+ReferenceNumber
+Gets or sets ReferenceNumber
+(Inherited from Transaction.)
+Revision
+Gets the Revision for the entity
+(Inherited from Entity.)
+SalesRepresentativeReference
+Gets or sets the Employee sales representative responsible for the receipt.
+SalesTaxAmount
+Gets SalesTaxAmount
+This property cannot be used for filtering or sorting
+SalesTaxCodeReference
+Gets or sets the SalesTaxCode for the receipt.
+TopMethods
+NameDescription
+AddAdvanceReceiptLine
+Add an advance receipt line to the receipt
+AddInvoiceLine
+Adds a line referencing the given Sales Invoice or Customer Credit Memo to the Receipt
+AddSalesLine
+Adds a sales line to the Receipt
+Delete
+Deletes the Receipt
+Equals	Determines whether the specified object is equal to the current object. (Inherited from Object.)
+GetHashCode	Serves as the default hash function. (Inherited from Object.)
+GetType	Gets the Type of the current instance. (Inherited from Object.)
+MarkForDeletion
+Marks this Entity to be deleted.
+Entity instances that have been marked as deleted are prohibited from using Save(), and must use Delete()
+(Inherited from Entity.)
+RemoveInvoiceLine
+Remove an existing invoice line from the Receipt
+RemoveSalesLine
+Remove an existing sales line from the Receipt
+Save
+Saves the Receipt
+ToString	Returns a string that represents the current object. (Inherited from Object.)
+Validate
+Validate this ValidatingComponent.
+(Inherited from ValidatingComponent.)
+Validate(ValidationProblemList)
+Validate this ValidatingComponent.
+(Inherited from ValidatingComponent.)
+TopEvents
+NameDescription
+Deleted
+Raises the Deleted event after this instance is deleted
+MarkedForDeletion
+Event which is raised after this Entity is deleted.
+(Inherited from Entity.)
+PropertyChanged
+Event fired when a property on the bus obj changes.
+(Inherited from ValidatingComponent.)
+Saved
+Raises the Saved event after this instance is persisted
+ValidationComplete
+Event fired when validation of entity has completed.
+(Inherited from ValidatingComponent.)
+TopSee Also ReferenceSage.Peachtree.API NamespaceSage.Peachtree.APIReceiptSalesLineSage.Peachtree.APIReceiptInvoiceLineSage.Peachtree.APISalesInvoiceSage.Peachtree.APICustomerCreditMemoReceiptCreditCardAuthorizationInfoSage.Peachtree.API.FactoriesReceiptFactory

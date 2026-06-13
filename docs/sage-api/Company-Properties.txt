@@ -1,0 +1,19 @@
+﻿Company PropertiesCompany Properties	Sage 50 API
+The Company type exposes the following members.Properties
+NameDescription
+AccountingMethod
+What accounting method is used in the company
+Address
+Get the billing NameAndAddress for this transaction
+CompanyIdentifier
+Gets the CompanyIdentifier
+Defaults
+Provides access to the group of default properties
+Factories
+Get the collection of factories
+IsClosed
+Gets the IsClosed flag
+Flag to notify if context is closed.
+Services
+Provides access to the group of service properties
+TopSee Also ReferenceCompany ClassSage.Peachtree.API Namespace

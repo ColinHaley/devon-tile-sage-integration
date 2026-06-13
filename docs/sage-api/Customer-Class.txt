@@ -1,0 +1,165 @@
+﻿Customer ClassCustomer Class	Sage 50 API
+A Customer represents an individual or business partner to which you sell product.
+Inheritance Hierarchy SystemObject  Sage.Peachtree.APIValidatingComponent    Sage.Peachtree.APIEntity      Sage.Peachtree.APICustomer
+Namespace:
+Sage.Peachtree.API
+Assembly:
+Sage.Peachtree.API (in Sage.Peachtree.API.dll) Version: 2026.0.0.82 (2026.0.00.0082)Syntax  C#VBC++F# Copypublic sealed class Customer : Entity,
+ISaveableEntity2, ISaveableEntity, IDeletableEntity2, IDeletableEntityPublic NotInheritable Class Customer
+Inherits Entity
+Implements ISaveableEntity2, ISaveableEntity, IDeletableEntity2, IDeletableEntitypublic ref class Customer sealed : public Entity,
+ISaveableEntity2, ISaveableEntity, IDeletableEntity2, IDeletableEntity[<SealedAttribute>]
+type Customer =
+class
+inherit Entity
+interface ISaveableEntity2
+interface ISaveableEntity
+interface IDeletableEntity2
+interface IDeletableEntity
+endThe Customer type exposes the following members.Properties
+NameDescription
+AccountNumber
+Gets or sets AccountNumber
+AverageDaysToPayInvoices
+Gets AverageDaysToPayInvoices
+This property cannot be used for filtering or sorting
+Balance
+Gets Balance
+BillToContact
+Gets the Contact to which the customer is billed
+CashAccountReference
+Gets or sets the cash Account for the customer.
+This property cannot be used for filtering or sorting
+Category
+Gets or sets Category
+Contacts
+Gets Contacts
+CreditStatus
+Gets or sets CreditStatus
+CustomerSince
+Gets or sets CustomerSince
+CustomFieldValues
+Gets the custom field values for the customer
+Email
+Gets or sets Email
+ID
+Gets or sets ID
+IsAdded
+Gets if this Entity is new.
+(Inherited from Entity.)
+IsDeleteAllowed
+Indicates whether this entity allowed to be deleted.
+IsDeleted
+Gets if this Entity has been marked for deletion.
+(Inherited from Entity.)
+IsInactive
+Gets or sets IsInactive
+IsModified
+Gets if this ValidatingComponent has been modified.
+(Inherited from ValidatingComponent.)
+IsProspect
+Gets or sets IsProspect
+IsSaveAllowed
+Indicates whether this entity allowed to be saved.
+IsUnchanged
+Gets if this ValidatingComponent has NOT been modified.
+(Inherited from ValidatingComponent.)
+Key
+Gets the EntityReference to this Customer instance
+LastInvoiceAmount
+Gets LastInvoiceAmount
+LastInvoiceDate
+Gets LastInvoiceDate
+LastPaymentAmount
+Gets LastPaymentAmount
+LastPaymentDate
+Gets LastPaymentDate
+LastSavedAt
+Gets LastSavedAt
+LastStatementDate
+Gets LastStatementDate
+Name
+Gets or sets Name
+OpenPurchaseOrderNumber
+Gets or sets OpenPurchaseOrderNumber
+PaymentMethod
+Gets or sets PaymentMethod
+This property cannot be used for filtering or sorting
+PhoneNumbers
+Gets the list of Phone Numbers for the Customer
+PriceLevel
+Gets or sets PriceLevel
+ReplaceInventoryItemIDWithPartNumber
+Gets or sets ReplaceInventoryItemIDWithPartNumber
+This property cannot be used for filtering or sorting
+ReplaceInventoryItemIDWithUPC
+Gets or sets ReplaceInventoryItemIDWithUPC
+This property cannot be used for filtering or sorting
+ResaleNumber
+Gets or sets ResaleNumber
+Revision
+Gets the Revision for the entity
+(Inherited from Entity.)
+SalesRepresentativeReference
+Gets or sets the Employee sales representative for the customer.
+ShipToContact
+Gets or Sets the contact to whom items are shipped
+ShipVia
+Gets or sets ShipVia
+Terms
+Gets or sets Terms
+UseEmailToDeliverForms
+Gets or sets UseEmailToDeliverForms
+This property cannot be used for filtering or sorting
+UsualSalesAccountReference
+Gets or sets the usual sales Account for the customer.
+WebSiteURL
+Gets or sets WebSiteURL
+TopMethods
+NameDescription
+AddContact
+Creates and adds a new contact for the customer
+Delete
+Deletes the Customer
+Equals	Determines whether the specified object is equal to the current object. (Inherited from Object.)
+GetAgedReceivables
+Gets the aged receivables of a customer starting at a specific date.
+GetAllAgedReceivables
+Returns a dictionary with the key as the customer entity reference and the value of the dictionary as a list of aging data
+GetHashCode	Serves as the default hash function. (Inherited from Object.)
+GetTotalAgedReceivables
+Returns the total Aged Receivables across ALL customers.
+GetType	Gets the Type of the current instance. (Inherited from Object.)
+MarkForDeletion
+Marks this Entity to be deleted.
+Entity instances that have been marked as deleted are prohibited from using Save(), and must use Delete()
+(Inherited from Entity.)
+PaymentHistory
+Return the payment information for this customer between the given dates
+SalesHistory
+Return the sales information for this customer between the given dates
+Save
+Saves the Customer
+ToString	Returns a string that represents the current object. (Inherited from Object.)
+Validate
+Validate this ValidatingComponent.
+(Inherited from ValidatingComponent.)
+Validate(ValidationProblemList)
+Validate this ValidatingComponent.
+(Inherited from ValidatingComponent.)
+TopEvents
+NameDescription
+Deleted
+Raises the Deleted event after this instance is deleted
+MarkedForDeletion
+Event which is raised after this Entity is deleted.
+(Inherited from Entity.)
+PropertyChanged
+Event fired when a property on the bus obj changes.
+(Inherited from ValidatingComponent.)
+Saved
+Raises the Saved event after this instance is persisted
+ValidationComplete
+Event fired when validation of entity has completed.
+(Inherited from ValidatingComponent.)
+TopSee Also ReferenceSage.Peachtree.API NamespaceSage.Peachtree.APIContactSage.Peachtree.APICustomFieldValueSage.Peachtree.APIEmployeeSage.Peachtree.APIShipViaNameSage.Peachtree.APIPaymentTermsSage.Peachtree.APICustomerListSage.Peachtree.API.FactoriesCustomerFactory

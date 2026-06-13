@@ -1,0 +1,17 @@
+﻿CompanyIdentifier PropertiesCompanyIdentifier Properties	Sage 50 API
+The CompanyIdentifier type exposes the following members.Properties
+NameDescription
+CompanyName
+Gets the company name
+DatabaseName
+Gets the company database name
+Guid
+Gets the Identifier for the company
+Path
+The UNC path to the company.
+This property is planned for deprecation in future releases. Please avoid using it when possible.
+SchemaVersion
+Gets the database version of the company
+ServerName
+Gets the server where the company is located.
+TopSee Also ReferenceCompanyIdentifier ClassSage.Peachtree.API Namespace

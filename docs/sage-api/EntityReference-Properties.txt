@@ -1,0 +1,10 @@
+﻿EntityReference PropertiesEntityReference Properties	Sage 50 API
+The EntityReference type exposes the following members.Properties
+NameDescription
+Guid
+Returns the Guid representing the entity
+IsEmpty
+Indicates whether this entity reference is blank or not
+SpecializedType
+Returns the specialized type of this EntityReference instance
+TopSee Also ReferenceEntityReference ClassSage.Peachtree.API Namespace

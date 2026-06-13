@@ -1,0 +1,15 @@
+﻿Receipt.AddInvoiceLine Method ReceiptAddInvoiceLine Method 	Sage 50 API
+Adds a line referencing the given Sales Invoice or Customer Credit Memo to the Receipt
+Namespace:
+Sage.Peachtree.API
+Assembly:
+Sage.Peachtree.API (in Sage.Peachtree.API.dll) Version: 2026.0.0.82 (2026.0.00.0082)Syntax  C#VBC++F# Copypublic ReceiptInvoiceLine AddInvoiceLine(
+Transaction referencedInvoice
+)Public Function AddInvoiceLine (
+referencedInvoice As Transaction
+) As ReceiptInvoiceLinepublic:
+ReceiptInvoiceLine^ AddInvoiceLine(
+Transaction^ referencedInvoice
+)member AddInvoiceLine :
+referencedInvoice : Transaction -> ReceiptInvoiceLine
+ParametersreferencedInvoiceType: Sage.Peachtree.APITransactionThe line to be added to the ReceiptReturn ValueType: ReceiptInvoiceLineThe ReceiptInvoiceLine that was added.See Also ReferenceReceipt ClassSage.Peachtree.API Namespace

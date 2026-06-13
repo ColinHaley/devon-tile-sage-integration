@@ -1,0 +1,50 @@
+﻿Company ClassCompany Class	Sage 50 API
+The company context provides the primary connection point for a Sage 50
+company, including a factory pattern for the creation of class instances,
+access to the default settings and company-based services.
+Inheritance Hierarchy SystemObject  Sage.Peachtree.APICompany
+Namespace:
+Sage.Peachtree.API
+Assembly:
+Sage.Peachtree.API (in Sage.Peachtree.API.dll) Version: 2026.0.0.82 (2026.0.00.0082)Syntax  C#VBC++F# Copypublic sealed class Company : IDisposablePublic NotInheritable Class Company
+Implements IDisposablepublic ref class Company sealed : IDisposable[<SealedAttribute>]
+type Company =
+class
+interface IDisposable
+endThe Company type exposes the following members.Properties
+NameDescription
+AccountingMethod
+What accounting method is used in the company
+Address
+Get the billing NameAndAddress for this transaction
+CompanyIdentifier
+Gets the CompanyIdentifier
+Defaults
+Provides access to the group of default properties
+Factories
+Get the collection of factories
+IsClosed
+Gets the IsClosed flag
+Flag to notify if context is closed.
+Services
+Provides access to the group of service properties
+TopMethods
+NameDescription
+Close
+Close this Company instance
+Dispose
+Performs tasks associated with freeing, releasing, or resetting unmanaged resources.
+Do not override this method
+Equals	Determines whether the specified object is equal to the current object. (Inherited from Object.)
+GetHashCode	Serves as the default hash function. (Inherited from Object.)
+GetType	Gets the Type of the current instance. (Inherited from Object.)
+ToString	Returns a string that represents the current object. (Inherited from Object.)
+TopEvents
+NameDescription
+Closed
+Occurs immediately after this Company has closed
+Closing
+Occurs when this Company is closing
+LogoutPending
+Event when logout request from the administrator is pending
+TopSee Also ReferenceSage.Peachtree.API NamespaceSage.Peachtree.APICompanyDefaultGroupSage.Peachtree.APICompanyFactoryGroupSage.Peachtree.APICompanyServiceGroupCompanyCompanyIdentifier

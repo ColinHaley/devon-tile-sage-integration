@@ -1,0 +1,45 @@
+﻿ReceiptSalesLine PropertiesReceiptSalesLine Properties	Sage 50 API
+The ReceiptSalesLine type exposes the following members.Properties
+NameDescription
+AccountReference
+Gets or sets the general ledger Account number to use when recording this line of the transaction.
+(Inherited from TransactionLine.)
+Amount
+The calculated amount obtained by multiplying the quantity by the unit price.
+(Inherited from TransactionLine.)
+Description
+A description of the line
+(Inherited from TransactionLine.)
+InventoryItemReference
+Gets or sets the InventoryItem for the receipt sales line.
+IsAdded
+Gets if this Entity is new.
+(Inherited from Entity.)
+IsDeleted
+Gets if this Entity has been marked for deletion.
+(Inherited from Entity.)
+IsModified
+Gets if this ValidatingComponent has been modified.
+(Inherited from ValidatingComponent.)
+IsUnchanged
+Gets if this ValidatingComponent has NOT been modified.
+(Inherited from ValidatingComponent.)
+IsUsed
+Indicates whether this line is used or not
+(Inherited from TransactionLine.)
+JobReference
+Gets or sets the Job related to the transaction.
+Key
+Gets the EntityReference to this ReceiptSalesLine instance
+ParentTransactionReference
+Gets the EntityReference of the parent Receipt transaction.
+Quantity
+Gets or sets Quantity
+Revision
+Gets the Revision for the entity
+(Inherited from Entity.)
+SalesTaxType
+Gets or sets SalesTaxType
+UnitPrice
+Gets or sets UnitPrice
+TopSee Also ReferenceReceiptSalesLine ClassSage.Peachtree.API Namespace

@@ -1,0 +1,33 @@
+﻿Account PropertiesAccount Properties	Sage 50 API
+The Account type exposes the following members.Properties
+NameDescription
+Classification
+Gets or sets the classification of the account.
+Description
+Gets or sets the description of the account.
+ID
+Gets or sets ID
+IsAdded
+Gets if this Entity is new.
+(Inherited from Entity.)
+IsDeleteAllowed
+Indicates whether this entity allowed to be deleted.
+IsDeleted
+Gets if this Entity has been marked for deletion.
+(Inherited from Entity.)
+IsInactive
+Gets or sets whether an account is active.
+IsModified
+Gets if this ValidatingComponent has been modified.
+(Inherited from ValidatingComponent.)
+IsSaveAllowed
+Indicates whether this entity allowed to be saved.
+IsUnchanged
+Gets if this ValidatingComponent has NOT been modified.
+(Inherited from ValidatingComponent.)
+Key
+Gets the EntityReference to this Account instance
+Revision
+Gets the Revision for the entity
+(Inherited from Entity.)
+TopSee Also ReferenceAccount ClassSage.Peachtree.API Namespace
