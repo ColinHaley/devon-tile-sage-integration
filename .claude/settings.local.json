@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell(\\(Get-ChildItem C:\\\\temp\\\\sageapi\\\\html | Measure-Object\\).Count; Get-ChildItem C:\\\\temp\\\\sageapi\\\\html | Select-Object Name -First 40)"
+      "PowerShell(\\(Get-ChildItem C:\\\\temp\\\\sageapi\\\\html | Measure-Object\\).Count; Get-ChildItem C:\\\\temp\\\\sageapi\\\\html | Select-Object Name -First 40)",
+      "PowerShell(foreach \\($p in 'C:\\\\Program Files \\(x86\\)\\\\Sage','C:\\\\Program Files\\\\Sage','C:\\\\Program Files \\(x86\\)\\\\Peachtree','C:\\\\Program Files\\\\Peachtree','C:\\\\Sage'\\) { if \\(Test-Path $p\\) { Write-Output \"EXISTS: $p\"; Get-ChildItem $p | Select-Object -ExpandProperty FullName } else { Write-Output \"missing: $p\" } })",
+      "PowerShell(foreach \\($p in @\\('HKLM:\\\\SOFTWARE\\\\WOW6432Node\\\\Sage','HKLM:\\\\SOFTWARE\\\\Sage'\\)\\) { if \\(Test-Path $p\\) { Write-Output \"=== $p ===\"; Get-ChildItem $p -Recurse -ErrorAction SilentlyContinue | Select-Object -First 30 -ExpandProperty Name } }; Write-Output '--- Peachtree dirs ---'; foreach \\($d in @\\(\"$env:ProgramFiles\", \"${env:ProgramFiles\\(x86\\)}\"\\)\\) { Get-ChildItem $d -Directory -ErrorAction SilentlyContinue | Where-Object { $_.Name -match 'Sage|Peach' } | Select-Object -ExpandProperty FullName })",
+      "PowerShell(Get-ChildItem 'C:\\\\Sage\\\\SAGE50_2026_0_0\\\\peachw\\\\install' -Recurse -File -ErrorAction SilentlyContinue | Group-Object Extension | Sort-Object Count -Descending | Select-Object Count, Name -First 15; Write-Output '--- large files ---'; Get-ChildItem 'C:\\\\Sage\\\\SAGE50_2026_0_0\\\\peachw\\\\install' -Recurse -File -ErrorAction SilentlyContinue | Sort-Object Length -Descending | Select-Object -First 15 FullName, @{n='MB';e={[math]::Round\\($_.Length/1MB,1\\)}} | Format-Table -AutoSize)",
+      "PowerShell(Select-String *)",
+      "PowerShell($dir='C:\\\\cygwin64\\\\home\\\\Colin\\\\dev\\\\devon-tile-sage-integration\\\\lib\\\\sage'; foreach \\($f in Get-ChildItem $dir -File\\) { $v = [System.Diagnostics.FileVersionInfo]::GetVersionInfo\\($f.FullName\\); Write-Output \"$\\($f.Name\\) | Orig: $\\($v.OriginalFilename\\) | FileVer: $\\($v.FileVersion\\) | Desc: $\\($v.FileDescription\\)\"; try { $an = [System.Reflection.AssemblyName]::GetAssemblyName\\($f.FullName\\); Write-Output \"   Assembly: $\\($an.FullName\\)\" } catch { Write-Output \"   not a .NET assembly: $\\($_.Exception.Message\\)\" } }; Write-Output '---'; \\(Get-FileHash \"$dir\\\\sage.peachtree.api.dll\"\\).Hash -eq \\(Get-FileHash \"$dir\\\\sage.peachtree.api.dll1\"\\).Hash)"
     ]
   }
 }

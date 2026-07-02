@@ -1,0 +1,691 @@
+﻿=======================================================
+class Sage.Peachtree.API.Account  (base: Sage.Peachtree.API.Entity)
+  prop Sage.Peachtree.API.AccountClassification Classification { get; set }
+  prop System.String Description { get; set }
+  prop System.String ID { get; set }
+  prop System.Boolean IsAdded { get }
+  prop System.Boolean IsDeleteAllowed { get }
+  prop System.Boolean IsDeleted { get }
+  prop System.Boolean IsInactive { get; set }
+  prop System.Boolean IsModified { get }
+  prop System.Boolean IsSaveAllowed { get }
+  prop System.Boolean IsUnchanged { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Key { get }
+  prop Sage.Peachtree.API.EntityReference Key { get }
+  prop Sage.Peachtree.API.Revision Revision { get }
+  method System.Void Delete()
+  method System.Decimal GetBeginningBalance(System.DateTime beginDate)
+  method System.Decimal GetEndingBalance(System.DateTime endDate)
+  method System.Void MarkForDeletion()
+  method System.Void Save()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+  method System.Boolean Validate()
+=======================================================
+enum Sage.Peachtree.API.AccountClassification  (base: System.Enum)
+  Cash = 0
+  Receivable = 1
+  Inventory = 2
+  ReceivableRetainage = 3
+  OtherCurrentAsset = 4
+  FixedAsset = 5
+  AccumulatedDepreciation = 6
+  OtherAssets = 7
+  Payable = 8
+  PayableRetainage = 9
+  OtherCurrentLiability = 10
+  OtherLiability = 11
+  EquityNoClose = 12
+  RetainedEarnings = 13
+  EquityClose = 14
+  Income = 15
+  CostSales = 16
+  Expense = 17
+=======================================================
+class Sage.Peachtree.API.AccountList  (base: Sage.Peachtree.API.Collections.Generic.EntityList[Sage.Peachtree.API.Account])
+  prop System.Int32 Count { get }
+  prop System.Boolean IsReadOnly { get }
+  prop Sage.Peachtree.API.Account Item { get; set }
+  prop Sage.Peachtree.API.Account Item { get; set }
+  prop System.Collections.Generic.ICollection`1[[Sage.Peachtree.API.EntityReference, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Keys { get }
+  prop System.Collections.Generic.ICollection`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Values { get }
+  method System.Void Add(Sage.Peachtree.API.Account item)
+  method System.Void BeginInit()
+  method System.Int32 BinarySearch(Sage.Peachtree.API.Account value, System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Int32 BinarySearch(System.Int32 index, System.Int32 count, Sage.Peachtree.API.Account value, System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Int32 BinarySearch(Sage.Peachtree.API.Account value)
+  method System.Void Clear()
+  method System.Boolean Contains(Sage.Peachtree.API.Account item)
+  method System.Boolean ContainsKey(Sage.Peachtree.API.EntityReference key)
+  method System.Void CopyTo(Sage.Peachtree.API.Account[] array, System.Int32 arrayIndex)
+  method System.Void EndInit()
+  method System.Collections.Generic.IEnumerator`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] GetEnumerator()
+  method Sage.Peachtree.API.Account GetItemByKey(Sage.Peachtree.API.EntityReference key)
+  method System.Int32 IndexOf(Sage.Peachtree.API.Account item)
+  method System.Int32 IndexOfKey(Sage.Peachtree.API.EntityReference key)
+  method System.Void Insert(System.Int32 index, Sage.Peachtree.API.Account item)
+  method System.Void Load(Sage.Peachtree.API.Collections.Generic.LoadModifiers loadModifiers)
+  method System.Void Load()
+  method System.Boolean Remove(Sage.Peachtree.API.Account item)
+  method System.Void RemoveAt(System.Int32 index)
+  method System.Void RemoveByKey(Sage.Peachtree.API.EntityReference key)
+  method System.Void Save()
+  method System.Void SetItem(Sage.Peachtree.API.Account value)
+  method System.Void Sort(System.Int32 index, System.Int32 count, System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Void Sort(System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Boolean TryGetValue(Sage.Peachtree.API.EntityReference key, Sage.Peachtree.API.Account& value)
+  method System.Void Validate()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+=======================================================
+class Sage.Peachtree.API.Address  (base: Sage.Peachtree.API.ValidatingComponent)
+  prop System.String Address1 { get; set }
+  prop System.String Address2 { get; set }
+  prop System.String City { get; set }
+  prop System.String Country { get; set }
+  prop System.Boolean IsModified { get }
+  prop System.Boolean IsUnchanged { get }
+  prop System.String SalesTaxCode { get; set }
+  prop System.String State { get; set }
+  prop System.String Zip { get; set }
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+  method System.Boolean Validate()
+=======================================================
+enum Sage.Peachtree.API.AuthorizationResult  (base: System.Enum)
+  None = 0
+  Pending = 1
+  Denied = 2
+  Granted = 3
+  CorruptedOrTampered = 4
+  LoginRestricted = 5
+  CompanyLocked = 6
+  NoCredentials = 7
+=======================================================
+class Sage.Peachtree.API.Collections.Generic.FilterExpression  (base: System.Object)
+  method Sage.Peachtree.API.Collections.Generic.BinaryFilterExpression AndAlso(Sage.Peachtree.API.Collections.Generic.FilterExpression left, Sage.Peachtree.API.Collections.Generic.FilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.ContainsExpression BeginsWith(Sage.Peachtree.API.Collections.Generic.StringConstantFilterExpression left, Sage.Peachtree.API.Collections.Generic.StringConstantFilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.ContainsExpression BeginsWith(Sage.Peachtree.API.Collections.Generic.PropertyFilterExpression left, Sage.Peachtree.API.Collections.Generic.StringConstantFilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.ConstantFilterExpression Constant(System.Type valueType, System.Object value)
+  method Sage.Peachtree.API.Collections.Generic.ConstantFilterExpression Constant(System.Object value)
+  method Sage.Peachtree.API.Collections.Generic.ContainsExpression Contains(Sage.Peachtree.API.Collections.Generic.PropertyFilterExpression left, Sage.Peachtree.API.Collections.Generic.StringConstantFilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.ContainsExpression Contains(Sage.Peachtree.API.Collections.Generic.StringConstantFilterExpression left, Sage.Peachtree.API.Collections.Generic.StringConstantFilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.ContainsExpression EndsWith(Sage.Peachtree.API.Collections.Generic.StringConstantFilterExpression left, Sage.Peachtree.API.Collections.Generic.StringConstantFilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.ContainsExpression EndsWith(Sage.Peachtree.API.Collections.Generic.PropertyFilterExpression left, Sage.Peachtree.API.Collections.Generic.StringConstantFilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.BinaryFilterExpression Equal(Sage.Peachtree.API.Collections.Generic.FilterExpression left, Sage.Peachtree.API.Collections.Generic.FilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.BinaryFilterExpression GreaterThan(Sage.Peachtree.API.Collections.Generic.FilterExpression left, Sage.Peachtree.API.Collections.Generic.FilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.BinaryFilterExpression GreaterThanOrEqual(Sage.Peachtree.API.Collections.Generic.FilterExpression left, Sage.Peachtree.API.Collections.Generic.FilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.BinaryFilterExpression LessThan(Sage.Peachtree.API.Collections.Generic.FilterExpression left, Sage.Peachtree.API.Collections.Generic.FilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.BinaryFilterExpression LessThanOrEqual(Sage.Peachtree.API.Collections.Generic.FilterExpression left, Sage.Peachtree.API.Collections.Generic.FilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.BinaryFilterExpression NotEqual(Sage.Peachtree.API.Collections.Generic.FilterExpression left, Sage.Peachtree.API.Collections.Generic.FilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.BinaryFilterExpression OrElse(Sage.Peachtree.API.Collections.Generic.FilterExpression left, Sage.Peachtree.API.Collections.Generic.FilterExpression right)
+  method Sage.Peachtree.API.Collections.Generic.PropertyFilterExpression Property(System.String propertyPath)
+  method Sage.Peachtree.API.Collections.Generic.StringConstantFilterExpression StringConstant(System.String value)
+=======================================================
+class Sage.Peachtree.API.Collections.Generic.LoadModifiers  (base: System.Object)
+  prop Sage.Peachtree.API.Collections.Generic.FilterExpression Filters { get; set }
+  prop System.Boolean IsEmpty { get }
+  prop Sage.Peachtree.API.Collections.Generic.SortExpressionList Sorts { get; set }
+  method Sage.Peachtree.API.Collections.Generic.LoadModifiers Create()
+=======================================================
+class Sage.Peachtree.API.Company  (base: System.Object)
+  prop Sage.Peachtree.API.AccountingMethodType AccountingMethod { get }
+  prop Sage.Peachtree.API.NameAndAddress Address { get }
+  prop Sage.Peachtree.API.CompanyIdentifier CompanyIdentifier { get; set }
+  prop Sage.Peachtree.API.Company+DefaultGroup Defaults { get; set }
+  prop Sage.Peachtree.API.Company+FactoryGroup Factories { get; set }
+  prop System.Boolean IsClosed { get }
+  prop Sage.Peachtree.API.Company+ServiceGroup Services { get; set }
+  method System.Void Close()
+  method System.Void Dispose()
+=======================================================
+class Sage.Peachtree.API.CompanyIdentifier  (base: System.Object)
+  prop System.String CompanyName { get; set }
+  prop System.String DatabaseName { get; set }
+  prop System.Guid Guid { get; set }
+  prop System.String Path { get; set }
+  prop System.String SchemaVersion { get; set }
+  prop System.String ServerName { get; set }
+  method System.Boolean Equals(System.Object obj)
+  method System.Int32 GetHashCode()
+=======================================================
+class Sage.Peachtree.API.CompanyIdentifierList  (base: System.Collections.Generic.List[Sage.Peachtree.API.CompanyIdentifier])
+  prop System.Int32 Capacity { get; set }
+  prop System.Int32 Count { get }
+  prop Sage.Peachtree.API.CompanyIdentifier Item { get; set }
+  method System.Void Add(Sage.Peachtree.API.CompanyIdentifier item)
+  method System.Void AddRange(System.Collections.Generic.IEnumerable`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] collection)
+  method System.Collections.ObjectModel.ReadOnlyCollection`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] AsReadOnly()
+  method System.Int32 BinarySearch(Sage.Peachtree.API.CompanyIdentifier item, System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Int32 BinarySearch(Sage.Peachtree.API.CompanyIdentifier item)
+  method System.Int32 BinarySearch(System.Int32 index, System.Int32 count, Sage.Peachtree.API.CompanyIdentifier item, System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Void Clear()
+  method System.Boolean Contains(Sage.Peachtree.API.CompanyIdentifier item)
+  method  ConvertAll( converter)
+  method System.Void CopyTo(Sage.Peachtree.API.CompanyIdentifier[] array)
+  method System.Void CopyTo(Sage.Peachtree.API.CompanyIdentifier[] array, System.Int32 arrayIndex)
+  method System.Void CopyTo(System.Int32 index, Sage.Peachtree.API.CompanyIdentifier[] array, System.Int32 arrayIndex, System.Int32 count)
+  method System.Boolean Exists(System.Predicate`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] match)
+  method Sage.Peachtree.API.CompanyIdentifier Find(System.Predicate`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] match)
+  method System.Collections.Generic.List`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] FindAll(System.Predicate`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] match)
+  method System.Int32 FindIndex(System.Int32 startIndex, System.Int32 count, System.Predicate`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] match)
+  method System.Int32 FindIndex(System.Predicate`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] match)
+  method System.Int32 FindIndex(System.Int32 startIndex, System.Predicate`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] match)
+  method Sage.Peachtree.API.CompanyIdentifier FindLast(System.Predicate`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] match)
+  method System.Int32 FindLastIndex(System.Int32 startIndex, System.Int32 count, System.Predicate`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] match)
+  method System.Int32 FindLastIndex(System.Predicate`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] match)
+  method System.Int32 FindLastIndex(System.Int32 startIndex, System.Predicate`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] match)
+  method System.Void ForEach(System.Action`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] action)
+  method System.Collections.Generic.List`1+Enumerator[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] GetEnumerator()
+  method System.Collections.Generic.List`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] GetRange(System.Int32 index, System.Int32 count)
+  method System.Int32 IndexOf(Sage.Peachtree.API.CompanyIdentifier item, System.Int32 index, System.Int32 count)
+  method System.Int32 IndexOf(Sage.Peachtree.API.CompanyIdentifier item)
+  method System.Int32 IndexOf(Sage.Peachtree.API.CompanyIdentifier item, System.Int32 index)
+  method System.Void Insert(System.Int32 index, Sage.Peachtree.API.CompanyIdentifier item)
+  method System.Void InsertRange(System.Int32 index, System.Collections.Generic.IEnumerable`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] collection)
+  method System.Int32 LastIndexOf(Sage.Peachtree.API.CompanyIdentifier item)
+  method System.Int32 LastIndexOf(Sage.Peachtree.API.CompanyIdentifier item, System.Int32 index, System.Int32 count)
+  method System.Int32 LastIndexOf(Sage.Peachtree.API.CompanyIdentifier item, System.Int32 index)
+  method System.Boolean Remove(Sage.Peachtree.API.CompanyIdentifier item)
+  method System.Int32 RemoveAll(System.Predicate`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] match)
+  method System.Void RemoveAt(System.Int32 index)
+  method System.Void RemoveRange(System.Int32 index, System.Int32 count)
+  method System.Void Reverse(System.Int32 index, System.Int32 count)
+  method System.Void Reverse()
+  method System.Void Sort(System.Int32 index, System.Int32 count, System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Void Sort(System.Comparison`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparison)
+  method System.Void Sort()
+  method System.Void Sort(System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method Sage.Peachtree.API.CompanyIdentifier[] ToArray()
+  method System.Void TrimExcess()
+  method System.Boolean TrueForAll(System.Predicate`1[[Sage.Peachtree.API.CompanyIdentifier, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] match)
+=======================================================
+class Sage.Peachtree.API.Contact  (base: Sage.Peachtree.API.Entity)
+  prop Sage.Peachtree.API.Address Address { get }
+  prop System.String CompanyName { get; set }
+  prop System.String Email { get; set }
+  prop System.String FirstName { get; set }
+  prop Sage.Peachtree.API.Gender Gender { get; set }
+  prop System.Boolean IsAdded { get }
+  prop System.Boolean IsDeleted { get }
+  prop System.Boolean IsModified { get }
+  prop System.Boolean IsPrimaryContact { get }
+  prop System.Boolean IsUnchanged { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Contact, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Key { get }
+  prop Sage.Peachtree.API.EntityReference Key { get }
+  prop System.String LastName { get; set }
+  prop System.DateTime LastSavedAt { get }
+  prop System.String MiddleInitial { get; set }
+  prop System.String Name { get }
+  prop Sage.Peachtree.API.NameToUseOnForms NameToUseOnForms { get; set }
+  prop System.String Notes { get; set }
+  prop Sage.Peachtree.API.PhoneNumberCollection PhoneNumbers { get }
+  prop System.String Prefix { get; set }
+  prop Sage.Peachtree.API.Revision Revision { get }
+  prop System.String Suffix { get; set }
+  prop System.String Title { get; set }
+  method System.Void MarkForDeletion()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+  method System.Boolean Validate()
+=======================================================
+class Sage.Peachtree.API.Customer  (base: Sage.Peachtree.API.Entity)
+  prop System.String AccountNumber { get; set }
+  prop System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] AverageDaysToPayInvoices { get }
+  prop System.Decimal Balance { get }
+  prop Sage.Peachtree.API.Contact BillToContact { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] CashAccountReference { get; set }
+  prop System.String Category { get; set }
+  prop Sage.Peachtree.API.ContactList Contacts { get }
+  prop Sage.Peachtree.API.CustomerCreditStatus CreditStatus { get; set }
+  prop System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] CustomerSince { get; set }
+  prop Sage.Peachtree.API.CustomFieldValueCollection CustomFieldValues { get }
+  prop System.String Email { get; set }
+  prop System.String ID { get; set }
+  prop System.Boolean IsAdded { get }
+  prop System.Boolean IsDeleteAllowed { get }
+  prop System.Boolean IsDeleted { get }
+  prop System.Boolean IsInactive { get; set }
+  prop System.Boolean IsModified { get }
+  prop System.Boolean IsProspect { get; set }
+  prop System.Boolean IsSaveAllowed { get }
+  prop System.Boolean IsUnchanged { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Customer, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Key { get }
+  prop Sage.Peachtree.API.EntityReference Key { get }
+  prop System.Decimal LastInvoiceAmount { get }
+  prop System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] LastInvoiceDate { get }
+  prop System.Decimal LastPaymentAmount { get }
+  prop System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] LastPaymentDate { get }
+  prop System.DateTime LastSavedAt { get }
+  prop System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] LastStatementDate { get }
+  prop System.String Name { get; set }
+  prop System.String OpenPurchaseOrderNumber { get; set }
+  prop System.String PaymentMethod { get; set }
+  prop Sage.Peachtree.API.PhoneNumberCollection PhoneNumbers { get }
+  prop System.Int16 PriceLevel { get; set }
+  prop System.Boolean ReplaceInventoryItemIDWithPartNumber { get; set }
+  prop System.Boolean ReplaceInventoryItemIDWithUPC { get; set }
+  prop System.String ResaleNumber { get; set }
+  prop Sage.Peachtree.API.Revision Revision { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Employee, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] SalesRepresentativeReference { get; set }
+  prop Sage.Peachtree.API.Contact ShipToContact { get; set }
+  prop System.String ShipVia { get; set }
+  prop Sage.Peachtree.API.PaymentTerms Terms { get; set }
+  prop System.Boolean UseEmailToDeliverForms { get; set }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] UsualSalesAccountReference { get; set }
+  prop System.String WebSiteURL { get; set }
+  method Sage.Peachtree.API.Contact AddContact()
+  method System.Void Delete()
+  method System.Collections.Generic.List`1[[Sage.Peachtree.API.AgingData, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] GetAgedReceivables(System.DateTime AsOfDate)
+  method System.Collections.Generic.Dictionary`2[[Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Customer, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]], Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4],[System.Collections.Generic.List`1[[Sage.Peachtree.API.AgingData, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetAllAgedReceivables(System.DateTime AsOfDate)
+  method System.Collections.Generic.List`1[[Sage.Peachtree.API.AgingData, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] GetTotalAgedReceivables(System.DateTime AsOfDate)
+  method System.Void MarkForDeletion()
+  method Sage.Peachtree.API.DateRangeAndAmountList PaymentHistory(System.DateTime fromDate, System.DateTime toDate)
+  method Sage.Peachtree.API.DateRangeAndAmountList SalesHistory(System.DateTime fromDate, System.DateTime toDate)
+  method System.Void Save()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+  method System.Boolean Validate()
+=======================================================
+class Sage.Peachtree.API.CustomerList  (base: Sage.Peachtree.API.Collections.Generic.EntityList[Sage.Peachtree.API.Customer])
+  prop System.Int32 Count { get }
+  prop System.Boolean IsReadOnly { get }
+  prop Sage.Peachtree.API.Customer Item { get; set }
+  prop Sage.Peachtree.API.Customer Item { get; set }
+  prop System.Collections.Generic.ICollection`1[[Sage.Peachtree.API.EntityReference, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Keys { get }
+  prop System.Collections.Generic.ICollection`1[[Sage.Peachtree.API.Customer, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Values { get }
+  method System.Void Add(Sage.Peachtree.API.Customer item)
+  method System.Void BeginInit()
+  method System.Int32 BinarySearch(Sage.Peachtree.API.Customer value, System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.Customer, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Int32 BinarySearch(System.Int32 index, System.Int32 count, Sage.Peachtree.API.Customer value, System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.Customer, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Int32 BinarySearch(Sage.Peachtree.API.Customer value)
+  method System.Void Clear()
+  method System.Boolean Contains(Sage.Peachtree.API.Customer item)
+  method System.Boolean ContainsKey(Sage.Peachtree.API.EntityReference key)
+  method System.Void CopyTo(Sage.Peachtree.API.Customer[] array, System.Int32 arrayIndex)
+  method System.Void EndInit()
+  method System.Collections.Generic.IEnumerator`1[[Sage.Peachtree.API.Customer, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] GetEnumerator()
+  method Sage.Peachtree.API.Customer GetItemByKey(Sage.Peachtree.API.EntityReference key)
+  method System.Int32 IndexOf(Sage.Peachtree.API.Customer item)
+  method System.Int32 IndexOfKey(Sage.Peachtree.API.EntityReference key)
+  method System.Void Insert(System.Int32 index, Sage.Peachtree.API.Customer item)
+  method System.Void Load(Sage.Peachtree.API.Collections.Generic.LoadModifiers loadModifiers)
+  method System.Void Load()
+  method System.Boolean Remove(Sage.Peachtree.API.Customer item)
+  method System.Void RemoveAt(System.Int32 index)
+  method System.Void RemoveByKey(Sage.Peachtree.API.EntityReference key)
+  method System.Void Save()
+  method System.Void SetItem(Sage.Peachtree.API.Customer value)
+  method System.Void Sort(System.Int32 index, System.Int32 count, System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.Customer, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Void Sort(System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.Customer, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Boolean TryGetValue(Sage.Peachtree.API.EntityReference key, Sage.Peachtree.API.Customer& value)
+  method System.Void Validate()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+=======================================================
+class Sage.Peachtree.API.CustomFieldDefinition  (base: System.Object)
+  prop System.Boolean Enabled { get }
+  prop System.String Label { get }
+=======================================================
+class Sage.Peachtree.API.CustomFieldValue  (base: System.Object)
+  prop System.String Key { get }
+  prop System.Object Value { get; set }
+=======================================================
+class Sage.Peachtree.API.CustomFieldValueCollection  (base: System.Collections.ObjectModel.ReadOnlyCollection[Sage.Peachtree.API.CustomFieldValue])
+  prop System.Int32 Count { get }
+  prop Sage.Peachtree.API.CustomFieldValue Item { get }
+  prop Sage.Peachtree.API.CustomFieldValue Item { get }
+  method System.Boolean Contains(Sage.Peachtree.API.CustomFieldValue value)
+  method System.Void CopyTo(Sage.Peachtree.API.CustomFieldValue[] array, System.Int32 index)
+  method System.Collections.Generic.IEnumerator`1[[Sage.Peachtree.API.CustomFieldValue, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] GetEnumerator()
+  method System.Int32 IndexOf(Sage.Peachtree.API.CustomFieldValue value)
+=======================================================
+class Sage.Peachtree.API.EntityReference  (base: System.Object)
+  prop System.Guid Guid { get }
+  prop System.Boolean IsEmpty { get }
+  prop System.Type SpecializedType { get }
+  method  Create(System.Guid guidKey)
+  method System.Boolean Equals(Sage.Peachtree.API.EntityReference other)
+  method Sage.Peachtree.API.Entity Load(Sage.Peachtree.API.Company fromCompany)
+=======================================================
+class Sage.Peachtree.API.EntityReference`1  (base: Sage.Peachtree.API.EntityReference)
+  prop Sage.Peachtree.API.EntityReference`1 Empty { get }
+  prop System.Guid Guid { get }
+  prop System.Boolean IsEmpty { get }
+  prop System.Type SpecializedType { get }
+  method Sage.Peachtree.API.EntityReference`1 Deserialize(System.IO.Stream stream)
+  method System.Boolean Equals(Sage.Peachtree.API.EntityReference other)
+  method System.Boolean Equals(System.Object obj)
+  method System.Int32 GetHashCode()
+  method Sage.Peachtree.API.Entity Load(Sage.Peachtree.API.Company fromCompany)
+  method  Load(Sage.Peachtree.API.Company fromCompany)
+  method System.Void Serialize(System.IO.Stream stream, Sage.Peachtree.API.EntityReference`1 entityReference)
+  method System.String ToString()
+=======================================================
+class Sage.Peachtree.API.Factories.AccountFactory  (base: Sage.Peachtree.API.Factories.EntityFactoryBase[Sage.Peachtree.API.Account])
+  method Sage.Peachtree.API.Account Create()
+  method Sage.Peachtree.API.AccountList List()
+  method Sage.Peachtree.API.Account Load(Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] entityRef)
+=======================================================
+class Sage.Peachtree.API.Factories.CustomerFactory  (base: Sage.Peachtree.API.Factories.EntityFactoryBase[Sage.Peachtree.API.Customer])
+  method Sage.Peachtree.API.Customer Create()
+  method Sage.Peachtree.API.CustomerList List()
+  method Sage.Peachtree.API.Customer Load(Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Customer, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] entityRef)
+=======================================================
+class Sage.Peachtree.API.Factories.GeneralJournalEntryFactory  (base: Sage.Peachtree.API.Factories.EntityFactoryBase[Sage.Peachtree.API.GeneralJournalEntry])
+  method Sage.Peachtree.API.GeneralJournalEntry Create()
+  method Sage.Peachtree.API.GeneralJournalEntryList List()
+  method Sage.Peachtree.API.GeneralJournalEntry Load(Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.GeneralJournalEntry, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] entityRef)
+=======================================================
+class Sage.Peachtree.API.Factories.ReceiptFactory  (base: Sage.Peachtree.API.Factories.EntityFactoryBase[Sage.Peachtree.API.Receipt])
+  method Sage.Peachtree.API.Receipt Create()
+  method Sage.Peachtree.API.ReceiptList List()
+  method Sage.Peachtree.API.Receipt Load(Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Receipt, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] entityRef)
+=======================================================
+class Sage.Peachtree.API.Factories.SalesInvoiceFactory  (base: Sage.Peachtree.API.Factories.EntityFactoryBase[Sage.Peachtree.API.SalesInvoice])
+  method Sage.Peachtree.API.SalesInvoice Create()
+  method Sage.Peachtree.API.SalesInvoiceList List()
+  method Sage.Peachtree.API.SalesInvoice Load(Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.SalesInvoice, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] entityRef)
+=======================================================
+class Sage.Peachtree.API.GeneralJournalEntry  (base: Sage.Peachtree.API.Transaction)
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] AccountReference { get; set }
+  prop System.Decimal Amount { get }
+  prop System.DateTime Date { get; set }
+  prop Sage.Peachtree.API.GeneralJournalEntryLineCollection GeneralJournalEntryLines { get }
+  prop System.Boolean IsAdded { get }
+  prop System.Boolean IsDeleteAllowed { get }
+  prop System.Boolean IsDeleted { get }
+  prop System.Boolean IsModified { get }
+  prop System.Boolean IsPosted { get }
+  prop System.Boolean IsReversingTransaction { get; set }
+  prop System.Boolean IsSaveAllowed { get }
+  prop System.Boolean IsUnchanged { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.GeneralJournalEntry, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Key { get }
+  prop Sage.Peachtree.API.EntityReference Key { get }
+  prop System.DateTime LastSavedAt { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.GeneralJournalEntry, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] PartnerReference { get }
+  prop System.String ReferenceNumber { get; set }
+  prop Sage.Peachtree.API.Revision Revision { get }
+  method Sage.Peachtree.API.GeneralJournalEntryLine AddLine()
+  method System.Void Delete()
+  method System.Void MarkForDeletion()
+  method System.Void RemoveLine(Sage.Peachtree.API.GeneralJournalEntryLine line)
+  method System.Void Save()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+  method System.Boolean Validate()
+=======================================================
+class Sage.Peachtree.API.GeneralJournalEntryLine  (base: Sage.Peachtree.API.TransactionLine)
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] AccountReference { get; set }
+  prop System.Decimal Amount { get; set }
+  prop System.String Description { get; set }
+  prop System.Boolean IsAdded { get }
+  prop System.Boolean IsDeleted { get }
+  prop System.Boolean IsModified { get }
+  prop System.Boolean IsUnchanged { get }
+  prop System.Boolean IsUsed { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Job, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] JobReference { get; set }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.GeneralJournalEntryLine, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Key { get }
+  prop Sage.Peachtree.API.EntityReference Key { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.GeneralJournalEntry, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] ParentTransactionReference { get }
+  prop Sage.Peachtree.API.Revision Revision { get }
+  method System.Decimal CalculateAmount(System.Decimal quantity, System.Decimal unitcost)
+  method System.Decimal CalculateQuantity(System.Decimal unitcost, System.Decimal amount)
+  method System.Decimal CalculateUnitCost(System.Decimal quantity, System.Decimal amount)
+  method System.Void MarkForDeletion()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+  method System.Boolean Validate()
+=======================================================
+class Sage.Peachtree.API.NameAndAddress  (base: Sage.Peachtree.API.ValidatingComponent)
+  prop Sage.Peachtree.API.Address Address { get; set }
+  prop System.Boolean IsModified { get }
+  prop System.Boolean IsUnchanged { get }
+  prop System.String Name { get; set }
+  method System.Void Assign(Sage.Peachtree.API.NameAndAddress source, Sage.Peachtree.API.NameAndAddress destination)
+  method System.Void CopyFrom(Sage.Peachtree.API.NameAndAddress source)
+  method System.Void CopyTo(Sage.Peachtree.API.NameAndAddress destination)
+  method System.Boolean Equals(Sage.Peachtree.API.NameAndAddress other)
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+  method System.Boolean Validate()
+=======================================================
+class Sage.Peachtree.API.PeachtreeSession  (base: System.Object)
+  prop System.String ApplicationIdentifier { get }
+  prop Sage.Peachtree.API.PeachtreeConfiguration Configuration { get }
+  prop System.Boolean SessionActive { get; set }
+  method System.Void Begin(System.String applicationIdentifier)
+  method System.Void Close(Sage.Peachtree.API.Company closingCompany)
+  method Sage.Peachtree.API.CompanyIdentifierList CompanyList()
+  method Sage.Peachtree.API.CompanyIdentifierList CompanyList(System.String serverName)
+  method System.Void Dispose()
+  method System.Void End()
+  method Sage.Peachtree.API.CompanyIdentifier LookupCompanyIdentifier(System.String serverName, System.String databaseName)
+  method Sage.Peachtree.API.Company LookupOpenedCompany(Sage.Peachtree.API.CompanyIdentifier companyId)
+  method Sage.Peachtree.API.Company Open(Sage.Peachtree.API.CompanyIdentifier companyId, System.Collections.Generic.IDictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] authenticationCredentials, System.Boolean sageDriveHoldLock)
+  method Sage.Peachtree.API.Company Open(Sage.Peachtree.API.CompanyIdentifier companyId, System.Boolean sageDriveHoldLock)
+  method Sage.Peachtree.API.Company Open(Sage.Peachtree.API.CompanyIdentifier companyId)
+  method Sage.Peachtree.API.Company Open(Sage.Peachtree.API.CompanyIdentifier companyId, System.Collections.Generic.IDictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] authenticationCredentials)
+  method Sage.Peachtree.API.AuthorizationResult RequestAccess(Sage.Peachtree.API.CompanyIdentifier companyId, System.Collections.Generic.IDictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] authenticationCredentials)
+  method Sage.Peachtree.API.AuthorizationResult RequestAccess(Sage.Peachtree.API.CompanyIdentifier companyId)
+  method Sage.Peachtree.API.AuthorizationResult VerifyAccess(Sage.Peachtree.API.CompanyIdentifier companyId)
+  method Sage.Peachtree.API.AuthorizationResult VerifyAccess(Sage.Peachtree.API.CompanyIdentifier companyId, System.Collections.Generic.IDictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] authenticationCredentials)
+=======================================================
+class Sage.Peachtree.API.PhoneNumberCollection  (base: System.Collections.ObjectModel.ReadOnlyCollection[Sage.Peachtree.API.PhoneNumber])
+  prop System.Int32 Count { get }
+  prop Sage.Peachtree.API.PhoneNumber Item { get }
+  method System.Boolean Contains(Sage.Peachtree.API.PhoneNumber value)
+  method System.Void CopyTo(Sage.Peachtree.API.PhoneNumber[] array, System.Int32 index)
+  method System.Collections.Generic.IEnumerator`1[[Sage.Peachtree.API.PhoneNumber, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] GetEnumerator()
+  method System.Int32 IndexOf(Sage.Peachtree.API.PhoneNumber value)
+=======================================================
+class Sage.Peachtree.API.Receipt  (base: Sage.Peachtree.API.Transaction)
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] AccountReference { get; set }
+  prop System.Decimal Amount { get }
+  prop Sage.Peachtree.API.ReceiptInvoiceLineCollection ApplyToInvoiceLines { get }
+  prop Sage.Peachtree.API.ReceiptSalesLineCollection ApplyToSalesLines { get }
+  prop Sage.Peachtree.API.CreditCardAuthorizationInfo CreditCardAuthorizationInfo { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Customer, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] CustomerReference { get; set }
+  prop System.DateTime Date { get; set }
+  prop System.String DepositTicketID { get; set }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] DiscountAccountReference { get; set }
+  prop System.Boolean IsAdded { get }
+  prop System.Boolean IsDeleteAllowed { get }
+  prop System.Boolean IsDeleted { get }
+  prop System.Boolean IsModified { get }
+  prop System.Boolean IsPosted { get }
+  prop System.Boolean IsSaveAllowed { get }
+  prop System.Boolean IsUnchanged { get }
+  prop Sage.Peachtree.API.EntityReference Key { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Receipt, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Key { get }
+  prop System.DateTime LastSavedAt { get }
+  prop Sage.Peachtree.API.NameAndAddress MainAddress { get }
+  prop System.String PaymentMethod { get; set }
+  prop System.String ReceiptNumber { get; set }
+  prop System.String ReferenceNumber { get; set }
+  prop Sage.Peachtree.API.Revision Revision { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Employee, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] SalesRepresentativeReference { get; set }
+  prop System.Decimal SalesTaxAmount { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.SalesTaxCode, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] SalesTaxCodeReference { get; set }
+  method Sage.Peachtree.API.ReceiptInvoiceLine AddAdvanceReceiptLine(Sage.Peachtree.API.AdvanceReceipt referencedInvoice)
+  method Sage.Peachtree.API.ReceiptInvoiceLine AddInvoiceLine(Sage.Peachtree.API.Transaction referencedInvoice)
+  method Sage.Peachtree.API.ReceiptSalesLine AddSalesLine()
+  method System.Void Delete()
+  method System.Void MarkForDeletion()
+  method System.Void RemoveInvoiceLine(Sage.Peachtree.API.ReceiptInvoiceLine line)
+  method System.Void RemoveSalesLine(Sage.Peachtree.API.ReceiptSalesLine line)
+  method System.Void Save()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+  method System.Boolean Validate()
+=======================================================
+class Sage.Peachtree.API.ReceiptInvoiceLine  (base: Sage.Peachtree.API.TransactionLine)
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] AccountReference { get; set }
+  prop System.Decimal Amount { get; set }
+  prop System.Decimal AmountPaid { get; set }
+  prop System.String Description { get; set }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] DiscountAccountReference { get }
+  prop System.Decimal DiscountAmount { get; set }
+  prop Sage.Peachtree.API.EntityReference InvoiceReference { get }
+  prop System.Boolean IsAdded { get }
+  prop System.Boolean IsDeleted { get }
+  prop System.Boolean IsModified { get }
+  prop System.Boolean IsUnchanged { get }
+  prop System.Boolean IsUsed { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Job, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] JobReference { get; set }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.ReceiptInvoiceLine, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Key { get }
+  prop Sage.Peachtree.API.EntityReference Key { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Receipt, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] ParentTransactionReference { get }
+  prop Sage.Peachtree.API.Revision Revision { get }
+  method System.Decimal CalculateAmount(System.Decimal quantity, System.Decimal unitcost)
+  method System.Decimal CalculateDiscountAmount(System.Decimal payment)
+  method System.Decimal CalculateQuantity(System.Decimal unitcost, System.Decimal amount)
+  method System.Decimal CalculateUnitCost(System.Decimal quantity, System.Decimal amount)
+  method System.Void MarkForDeletion()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+  method System.Boolean Validate()
+=======================================================
+class Sage.Peachtree.API.ReceiptSalesLine  (base: Sage.Peachtree.API.TransactionLine)
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] AccountReference { get; set }
+  prop System.Decimal Amount { get; set }
+  prop System.String Description { get; set }
+  prop Sage.Peachtree.API.EntityReference InventoryItemReference { get; set }
+  prop System.Boolean IsAdded { get }
+  prop System.Boolean IsDeleted { get }
+  prop System.Boolean IsModified { get }
+  prop System.Boolean IsUnchanged { get }
+  prop System.Boolean IsUsed { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Job, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] JobReference { get; set }
+  prop Sage.Peachtree.API.EntityReference Key { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.ReceiptSalesLine, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Key { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Receipt, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] ParentTransactionReference { get }
+  prop System.Decimal Quantity { get; set }
+  prop Sage.Peachtree.API.Revision Revision { get }
+  prop System.Int32 SalesTaxType { get; set }
+  prop System.Decimal UnitPrice { get; set }
+  method System.Decimal CalculateAmount(System.Decimal quantity, System.Decimal unitcost)
+  method System.Decimal CalculateQuantity(System.Decimal unitcost, System.Decimal amount)
+  method System.Decimal CalculateUnitCost(System.Decimal quantity, System.Decimal amount)
+  method System.Void MarkForDeletion()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+  method System.Boolean Validate()
+=======================================================
+class Sage.Peachtree.API.SalesInvoice  (base: Sage.Peachtree.API.Transaction)
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] AccountReference { get; set }
+  prop System.Decimal Amount { get }
+  prop System.Decimal AmountDue { get }
+  prop Sage.Peachtree.API.SalesInvoiceProposalLineCollection ApplyToProposalLines { get }
+  prop Sage.Peachtree.API.SalesInvoiceSalesLineCollection ApplyToSalesLines { get }
+  prop Sage.Peachtree.API.SalesInvoiceSalesOrderLineCollection ApplyToSalesOrderLines { get }
+  prop System.String CustomerNote { get; set }
+  prop System.String CustomerPurchaseOrderNumber { get; set }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Customer, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] CustomerReference { get; set }
+  prop System.DateTime Date { get; set }
+  prop System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] DateDue { get; set }
+  prop System.Decimal DiscountAmount { get; set }
+  prop System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] DiscountDate { get; set }
+  prop System.Boolean DropShip { get; set }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] FreightAccountReference { get; set }
+  prop System.Decimal FreightAmount { get; set }
+  prop System.String InternalNote { get; set }
+  prop System.Boolean IsAdded { get }
+  prop System.Boolean IsDeleteAllowed { get }
+  prop System.Boolean IsDeleted { get }
+  prop System.Boolean IsModified { get }
+  prop System.Boolean IsPosted { get }
+  prop System.Boolean IsSaveAllowed { get }
+  prop System.Boolean IsUnchanged { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.SalesInvoice, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Key { get }
+  prop Sage.Peachtree.API.EntityReference Key { get }
+  prop System.DateTime LastSavedAt { get }
+  prop System.Boolean PrintCustomerNoteAfterLineItems { get; set }
+  prop System.String ReferenceNumber { get; set }
+  prop Sage.Peachtree.API.Revision Revision { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Employee, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] SalesRepresentativeReference { get; set }
+  prop System.Decimal SalesTaxAmount { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.SalesTaxCode, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] SalesTaxCodeReference { get; set }
+  prop System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] ShipDate { get; set }
+  prop Sage.Peachtree.API.NameAndAddress ShipToAddress { get }
+  prop System.String ShipVia { get; set }
+  prop System.String StatementNote { get; set }
+  prop System.String TermsDescription { get; set }
+  prop Sage.Peachtree.API.SalesInvoiceRetainageLineCollection WithholdRetainageLines { get }
+  method Sage.Peachtree.API.SalesInvoiceSalesLine AddSalesLine()
+  method Sage.Peachtree.API.SalesInvoiceSalesOrderLine AddSalesOrderLine(Sage.Peachtree.API.SalesOrderLine salesOrderLine)
+  method System.Int32 AgeOnDate(System.DateTime date)
+  method System.Void Delete()
+  method System.Void MarkForDeletion()
+  method System.Void RemoveSalesLine(Sage.Peachtree.API.SalesInvoiceSalesLine line)
+  method System.Void RemoveSalesOrderLine(Sage.Peachtree.API.SalesInvoiceSalesOrderLine line)
+  method System.Void Save()
+  method System.Boolean Validate()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+  method Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.SalesInvoice, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Void(System.DateTime VoidTransactionDate)
+=======================================================
+class Sage.Peachtree.API.SalesInvoiceList  (base: Sage.Peachtree.API.Collections.Generic.EntityList[Sage.Peachtree.API.SalesInvoice])
+  prop System.Int32 Count { get }
+  prop System.Boolean IsReadOnly { get }
+  prop Sage.Peachtree.API.SalesInvoice Item { get; set }
+  prop Sage.Peachtree.API.SalesInvoice Item { get; set }
+  prop System.Collections.Generic.ICollection`1[[Sage.Peachtree.API.EntityReference, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Keys { get }
+  prop System.Collections.Generic.ICollection`1[[Sage.Peachtree.API.SalesInvoice, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Values { get }
+  method System.Void Add(Sage.Peachtree.API.SalesInvoice item)
+  method System.Void BeginInit()
+  method System.Int32 BinarySearch(Sage.Peachtree.API.SalesInvoice value, System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.SalesInvoice, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Int32 BinarySearch(System.Int32 index, System.Int32 count, Sage.Peachtree.API.SalesInvoice value, System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.SalesInvoice, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Int32 BinarySearch(Sage.Peachtree.API.SalesInvoice value)
+  method System.Void Clear()
+  method System.Boolean Contains(Sage.Peachtree.API.SalesInvoice item)
+  method System.Boolean ContainsKey(Sage.Peachtree.API.EntityReference key)
+  method System.Void CopyTo(Sage.Peachtree.API.SalesInvoice[] array, System.Int32 arrayIndex)
+  method System.Void EndInit()
+  method System.Collections.Generic.IEnumerator`1[[Sage.Peachtree.API.SalesInvoice, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] GetEnumerator()
+  method Sage.Peachtree.API.SalesInvoice GetItemByKey(Sage.Peachtree.API.EntityReference key)
+  method System.Int32 IndexOf(Sage.Peachtree.API.SalesInvoice item)
+  method System.Int32 IndexOfKey(Sage.Peachtree.API.EntityReference key)
+  method System.Void Insert(System.Int32 index, Sage.Peachtree.API.SalesInvoice item)
+  method System.Void Load(Sage.Peachtree.API.Collections.Generic.LoadModifiers loadModifiers)
+  method System.Void Load()
+  method System.Boolean Remove(Sage.Peachtree.API.SalesInvoice item)
+  method System.Void RemoveAt(System.Int32 index)
+  method System.Void RemoveByKey(Sage.Peachtree.API.EntityReference key)
+  method System.Void Save()
+  method System.Void SetItem(Sage.Peachtree.API.SalesInvoice value)
+  method System.Void Sort(System.Int32 index, System.Int32 count, System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.SalesInvoice, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Void Sort(System.Collections.Generic.IComparer`1[[Sage.Peachtree.API.SalesInvoice, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] comparer)
+  method System.Boolean TryGetValue(Sage.Peachtree.API.EntityReference key, Sage.Peachtree.API.SalesInvoice& value)
+  method System.Void Validate()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+=======================================================
+class Sage.Peachtree.API.SalesInvoiceSalesLine  (base: Sage.Peachtree.API.TransactionLine)
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] AccountReference { get; set }
+  prop System.Decimal Amount { get; set }
+  prop System.String Description { get; set }
+  prop Sage.Peachtree.API.EntityReference InventoryItemReference { get; set }
+  prop System.Boolean IsAdded { get }
+  prop System.Boolean IsDeleted { get }
+  prop System.Boolean IsModified { get }
+  prop System.Boolean IsUnchanged { get }
+  prop System.Boolean IsUsed { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Job, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] JobReference { get; set }
+  prop Sage.Peachtree.API.EntityReference Key { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.SalesInvoiceSalesLine, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] Key { get }
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.SalesInvoice, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] ParentTransactionReference { get }
+  prop System.Decimal Quantity { get; set }
+  prop Sage.Peachtree.API.Revision Revision { get }
+  prop System.Int32 SalesTaxType { get; set }
+  prop System.Decimal UnitPrice { get; set }
+  method System.Decimal CalculateAmount(System.Decimal quantity, System.Decimal unitcost)
+  method System.Decimal CalculateQuantity(System.Decimal unitcost, System.Decimal amount)
+  method System.Decimal CalculateUnitCost(System.Decimal quantity, System.Decimal amount)
+  method System.Void MarkForDeletion()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+  method System.Boolean Validate()
+=======================================================
+class Sage.Peachtree.API.Transaction  (base: Sage.Peachtree.API.Entity)
+  prop Sage.Peachtree.API.EntityReference`1[[Sage.Peachtree.API.Account, Sage.Peachtree.API, Version=2026.0.0.82, Culture=neutral, PublicKeyToken=d06c16dde04d83e4]] AccountReference { get; set }
+  prop System.Decimal Amount { get }
+  prop System.DateTime Date { get; set }
+  prop System.Boolean IsAdded { get }
+  prop System.Boolean IsDeleted { get }
+  prop System.Boolean IsModified { get }
+  prop System.Boolean IsPosted { get }
+  prop System.Boolean IsUnchanged { get }
+  prop Sage.Peachtree.API.EntityReference Key { get }
+  prop System.DateTime LastSavedAt { get }
+  prop System.String ReferenceNumber { get; set }
+  prop Sage.Peachtree.API.Revision Revision { get }
+  method System.Void MarkForDeletion()
+  method System.Boolean Validate(Sage.Peachtree.API.ValidationProblemList problemList)
+  method System.Boolean Validate()
+

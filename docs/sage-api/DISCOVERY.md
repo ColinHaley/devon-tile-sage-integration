@@ -114,6 +114,18 @@ Properties: `ReferenceNumber` (invoice number), `CustomerReference`
   `Account-Properties.txt`); resolved via `AccountFactory.List()` + filter,
   matching the configured Stripe Clearing / Stripe Fees account names/IDs.
 
+## Update 2026-07-02: real DLL obtained — stub no longer needed
+
+The real `Sage.Peachtree.API.dll` (v2026.0.0.82, PublicKeyToken
+`d06c16dde04d83e4`) and its companion `Sage.Peachtree.API.Resolver.dll` were
+extracted from the Sage 50 install media on this machine
+(`C:\Sage\SAGE50_2026_0_0\peachw\install\Data1.cab`, a standard MSI cabinet —
+extracted with Windows `expand.exe`, no Sage install required). Both now live
+in `lib\sage\` at the repo root; point `SageSdkPath` there. The project can
+compile against the real assembly locally; the generated stub is obsolete.
+Note: the DLL alone allows compilation, but *running* against a company file
+still requires Sage 50 to be installed (only install media is present here).
+
 ## Build environment on this dev machine
 
 - No Visual Studio, no .NET SDK (`dotnet`), no NuGet CLI.

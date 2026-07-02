@@ -1,0 +1,17 @@
+# Build outputs
+src/**/bin/
+src/**/obj/
+
+# NuGet package payloads are fetched by tools/fetch-packages.ps1 (see README);
+# keep the extracted folders out of git.
+packages/*.nupkg
+packages/*/
+
+# Sage assemblies are extracted from the Sage 50 install media (see
+# docs/sage-api/DISCOVERY.md); not redistributable, so not committed.
+lib/sage/
+
+# Local editor/OS noise
+*.suo
+*.user
+Thumbs.db
